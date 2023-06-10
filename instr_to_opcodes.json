@@ -1,0 +1,1952 @@
+{
+  "BRK": {
+    "0x00": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "BRK"
+      ]
+    }
+  },
+  "ORA": {
+    "0x01": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "ORA ($44,X)"
+      ]
+    },
+    "0x05": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ORA $44"
+      ]
+    },
+    "0x09": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ORA #$44"
+      ]
+    },
+    "0x0D": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ORA $4400"
+      ]
+    },
+    "0x11": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "ORA ($44),Y"
+      ]
+    },
+    "0x15": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ORA $44,X"
+      ]
+    },
+    "0x19": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "ORA $4400,Y"
+      ]
+    },
+    "0x1D": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ORA $4400,X"
+      ]
+    }
+  },
+  "STP": {
+    "0x02": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0x12": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0x22": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0x32": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0x42": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0x52": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0x62": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0x72": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0x92": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0xB2": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0xD2": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    },
+    "0xF2": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "SLO": {
+    "0x03": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "SLO ($44,X)"
+      ]
+    },
+    "0x07": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "SLO $44"
+      ]
+    },
+    "0x0F": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "SLO $4400"
+      ]
+    },
+    "0x13": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "SLO ($44),Y"
+      ]
+    },
+    "0x17": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "SLO $44,X"
+      ]
+    },
+    "0x1B": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "SLO $4400,Y"
+      ]
+    },
+    "0x1F": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "SLO $4400,X"
+      ]
+    }
+  },
+  "NOP": {
+    "0x04": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "NOP $44"
+      ]
+    },
+    "0x0C": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "NOP $4400"
+      ]
+    },
+    "0x14": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    },
+    "0x1A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    },
+    "0x1C": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    },
+    "0x34": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    },
+    "0x3A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    },
+    "0x3C": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    },
+    "0x44": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "NOP $44"
+      ]
+    },
+    "0x54": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    },
+    "0x5A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    },
+    "0x5C": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    },
+    "0x64": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "NOP $44"
+      ]
+    },
+    "0x74": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    },
+    "0x7A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    },
+    "0x7C": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    },
+    "0x80": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    },
+    "0x82": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    },
+    "0x89": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    },
+    "0xC2": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    },
+    "0xD4": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    },
+    "0xDA": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    },
+    "0xDC": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    },
+    "0xE2": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    },
+    "0xEA": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    },
+    "0xF4": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    },
+    "0xFA": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    },
+    "0xFC": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    }
+  },
+  "ASL": {
+    "0x06": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ASL $44"
+      ]
+    },
+    "0x0A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "ASL"
+      ]
+    },
+    "0x0E": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ASL $4400"
+      ]
+    },
+    "0x16": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ASL $44,X"
+      ]
+    },
+    "0x1E": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ASL $4400,X"
+      ]
+    }
+  },
+  "PHP": {
+    "0x08": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "PHP"
+      ]
+    }
+  },
+  "ANC": {
+    "0x0B": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ANC #$44"
+      ]
+    },
+    "0x2B": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ANC #$44"
+      ]
+    }
+  },
+  "BPL": {
+    "0x10": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BPL $10",
+        "BPL label"
+      ]
+    }
+  },
+  "CLC": {
+    "0x18": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "CLC"
+      ]
+    }
+  },
+  "JSR": {
+    "0x20": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "JSR $4400"
+      ]
+    }
+  },
+  "AND": {
+    "0x21": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "AND ($44,X)"
+      ]
+    },
+    "0x25": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "AND $44"
+      ]
+    },
+    "0x29": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "AND #$44"
+      ]
+    },
+    "0x2D": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "AND $4400"
+      ]
+    },
+    "0x31": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "AND ($44),Y"
+      ]
+    },
+    "0x35": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "AND $44,X"
+      ]
+    },
+    "0x39": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "AND $4400,Y"
+      ]
+    },
+    "0x3D": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "AND $4400,X"
+      ]
+    }
+  },
+  "RLA": {
+    "0x23": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "RLA ($44,X)"
+      ]
+    },
+    "0x27": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "RLA $44"
+      ]
+    },
+    "0x2F": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "RLA $4400"
+      ]
+    },
+    "0x33": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "RLA ($44),Y"
+      ]
+    },
+    "0x37": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "RLA $44,X"
+      ]
+    },
+    "0x3B": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "RLA $4400,Y"
+      ]
+    },
+    "0x3F": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "RLA $4400,X"
+      ]
+    }
+  },
+  "BIT": {
+    "0x24": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "BIT $44"
+      ]
+    },
+    "0x2C": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "BIT $4400"
+      ]
+    }
+  },
+  "ROL": {
+    "0x26": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ROL $44"
+      ]
+    },
+    "0x2A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "ROL"
+      ]
+    },
+    "0x2E": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ROL $4400"
+      ]
+    },
+    "0x36": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ROL $44,X"
+      ]
+    },
+    "0x3E": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ROL $4400,X"
+      ]
+    }
+  },
+  "PLP": {
+    "0x28": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "PLP"
+      ]
+    }
+  },
+  "BMI": {
+    "0x30": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BMI $10",
+        "BMI label"
+      ]
+    }
+  },
+  "SEC": {
+    "0x38": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "SEC"
+      ]
+    }
+  },
+  "RTI": {
+    "0x40": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "RTI"
+      ]
+    }
+  },
+  "EOR": {
+    "0x41": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "EOR ($44,X)"
+      ]
+    },
+    "0x45": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "EOR $44"
+      ]
+    },
+    "0x49": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "EOR #$44"
+      ]
+    },
+    "0x4D": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "EOR $4400"
+      ]
+    },
+    "0x51": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "EOR ($44),Y"
+      ]
+    },
+    "0x55": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "EOR $44,X"
+      ]
+    },
+    "0x59": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "EOR $4400,Y"
+      ]
+    },
+    "0x5D": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "EOR $4400,X"
+      ]
+    }
+  },
+  "SRE": {
+    "0x43": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "SRE ($44,X)"
+      ]
+    },
+    "0x47": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "SRE $44"
+      ]
+    },
+    "0x4F": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "SRE $4400"
+      ]
+    },
+    "0x53": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "SRE ($44),Y"
+      ]
+    },
+    "0x57": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "SRE $44,X"
+      ]
+    },
+    "0x5B": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "SRE $4400,Y"
+      ]
+    },
+    "0x5F": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "SRE $4400,X"
+      ]
+    }
+  },
+  "LSR": {
+    "0x46": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LSR $44"
+      ]
+    },
+    "0x4A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "LSR"
+      ]
+    },
+    "0x4E": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LSR $4400"
+      ]
+    },
+    "0x56": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "LSR $44,X"
+      ]
+    },
+    "0x5E": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "LSR $4400,X"
+      ]
+    }
+  },
+  "PHA": {
+    "0x48": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "PHA"
+      ]
+    }
+  },
+  "ALR": {
+    "0x4B": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ALR #$44"
+      ]
+    }
+  },
+  "JMP": {
+    "0x4C": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "JMP $4400"
+      ]
+    },
+    "0x6C": {
+      "notation": "(a)",
+      "name": "IND",
+      "examples": [
+        "JMP ($5597)"
+      ]
+    }
+  },
+  "BVC": {
+    "0x50": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BVC $10",
+        "BVC label"
+      ]
+    }
+  },
+  "CLI": {
+    "0x58": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "CLI"
+      ]
+    }
+  },
+  "RTS": {
+    "0x60": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "RTS"
+      ]
+    }
+  },
+  "ADC": {
+    "0x61": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "ADC ($44,X)"
+      ]
+    },
+    "0x65": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ADC $44"
+      ]
+    },
+    "0x69": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ADC #$44"
+      ]
+    },
+    "0x6D": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ADC $4400"
+      ]
+    },
+    "0x71": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "ADC ($44),Y"
+      ]
+    },
+    "0x75": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ADC $44,X"
+      ]
+    },
+    "0x79": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "ADC $4400,Y"
+      ]
+    },
+    "0x7D": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ADC $4400,X"
+      ]
+    }
+  },
+  "RRA": {
+    "0x63": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "RRA ($44,X)"
+      ]
+    },
+    "0x67": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "RRA $44"
+      ]
+    },
+    "0x6F": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "RRA $4400"
+      ]
+    },
+    "0x73": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "RRA ($44),Y"
+      ]
+    },
+    "0x77": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "RRA $44,X"
+      ]
+    },
+    "0x7B": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "RRA $4400,Y"
+      ]
+    },
+    "0x7F": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "RRA $4400,X"
+      ]
+    }
+  },
+  "ROR": {
+    "0x66": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ROR $44"
+      ]
+    },
+    "0x6A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "ROR"
+      ]
+    },
+    "0x6E": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ROR $4400"
+      ]
+    },
+    "0x76": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ROR $44,X"
+      ]
+    },
+    "0x7E": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ROR $4400,X"
+      ]
+    }
+  },
+  "PLA": {
+    "0x68": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "PLA"
+      ]
+    }
+  },
+  "ARR": {
+    "0x6B": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ARR #$44"
+      ]
+    }
+  },
+  "BVS": {
+    "0x70": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BVS $10",
+        "BVS label"
+      ]
+    }
+  },
+  "SEI": {
+    "0x78": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "SEI"
+      ]
+    }
+  },
+  "STA": {
+    "0x81": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "STA ($44,X)"
+      ]
+    },
+    "0x85": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "STA $44"
+      ]
+    },
+    "0x8D": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "STA $4400"
+      ]
+    },
+    "0x91": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "STA ($44),Y"
+      ]
+    },
+    "0x95": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "STA $44,X"
+      ]
+    },
+    "0x99": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "STA $4400,Y"
+      ]
+    },
+    "0x9D": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "STA $4400,X"
+      ]
+    }
+  },
+  "SAX": {
+    "0x83": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "SAX ($44,X)"
+      ]
+    },
+    "0x87": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "SAX $44"
+      ]
+    },
+    "0x8F": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "SAX $4400"
+      ]
+    },
+    "0x97": {
+      "notation": "d,y",
+      "name": "ZPY",
+      "examples": [
+        "SAX $44,Y"
+      ]
+    }
+  },
+  "STY": {
+    "0x84": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "STY $44"
+      ]
+    },
+    "0x8C": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "STY $4400"
+      ]
+    },
+    "0x94": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "STY $44,X"
+      ]
+    }
+  },
+  "STX": {
+    "0x86": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "STX $44"
+      ]
+    },
+    "0x8E": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "STX $4400"
+      ]
+    },
+    "0x96": {
+      "notation": "d,y",
+      "name": "ZPY",
+      "examples": [
+        "STX $44,Y"
+      ]
+    }
+  },
+  "DEY": {
+    "0x88": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "DEY"
+      ]
+    }
+  },
+  "TXA": {
+    "0x8A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TXA"
+      ]
+    }
+  },
+  "XAA": {
+    "0x8B": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "XAA #$44"
+      ]
+    }
+  },
+  "BCC": {
+    "0x90": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BCC $10",
+        "BCC label"
+      ]
+    }
+  },
+  "AHX": {
+    "0x93": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "AHX ($44),Y"
+      ]
+    },
+    "0x9F": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "AHX $4400,Y"
+      ]
+    }
+  },
+  "TYA": {
+    "0x98": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TYA"
+      ]
+    }
+  },
+  "TXS": {
+    "0x9A": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TXS"
+      ]
+    }
+  },
+  "TAS": {
+    "0x9B": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "TAS $4400,Y"
+      ]
+    }
+  },
+  "SHY": {
+    "0x9C": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "SHY $4400,X"
+      ]
+    }
+  },
+  "SHX": {
+    "0x9E": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "SHX $4400,Y"
+      ]
+    }
+  },
+  "LDY": {
+    "0xA0": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "LDY #$44"
+      ]
+    },
+    "0xA4": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LDY $44"
+      ]
+    },
+    "0xAC": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LDY $4400"
+      ]
+    },
+    "0xB4": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "LDY $44,X"
+      ]
+    },
+    "0xBC": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "LDY $4400,X"
+      ]
+    }
+  },
+  "LDA": {
+    "0xA1": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "LDA ($44,X)"
+      ]
+    },
+    "0xA5": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LDA $44"
+      ]
+    },
+    "0xA9": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "LDA #$44"
+      ]
+    },
+    "0xAD": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LDA $4400"
+      ]
+    },
+    "0xB1": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "LDA ($44),Y"
+      ]
+    },
+    "0xB5": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "LDA $44,X"
+      ]
+    },
+    "0xB9": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "LDA $4400,Y"
+      ]
+    },
+    "0xBD": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "LDA $4400,X"
+      ]
+    }
+  },
+  "LDX": {
+    "0xA2": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "LDX #$44"
+      ]
+    },
+    "0xA6": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LDX $44"
+      ]
+    },
+    "0xAE": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LDX $4400"
+      ]
+    },
+    "0xB6": {
+      "notation": "d,y",
+      "name": "ZPY",
+      "examples": [
+        "LDX $44,Y"
+      ]
+    },
+    "0xBE": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "LDX $4400,Y"
+      ]
+    }
+  },
+  "LAX": {
+    "0xA3": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "LAX ($44,X)"
+      ]
+    },
+    "0xA7": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LAX $44"
+      ]
+    },
+    "0xAB": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "LAX #$44"
+      ]
+    },
+    "0xAF": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LAX $4400"
+      ]
+    },
+    "0xB3": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "LAX ($44),Y"
+      ]
+    },
+    "0xB7": {
+      "notation": "d,y",
+      "name": "ZPY",
+      "examples": [
+        "LAX $44,Y"
+      ]
+    },
+    "0xBF": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "LAX $4400,Y"
+      ]
+    }
+  },
+  "TAY": {
+    "0xA8": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TAY"
+      ]
+    }
+  },
+  "TAX": {
+    "0xAA": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TAX"
+      ]
+    }
+  },
+  "BCS": {
+    "0xB0": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BCS $10",
+        "BCS label"
+      ]
+    }
+  },
+  "CLV": {
+    "0xB8": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "CLV"
+      ]
+    }
+  },
+  "TSX": {
+    "0xBA": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TSX"
+      ]
+    }
+  },
+  "LAS": {
+    "0xBB": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "LAS $4400,Y"
+      ]
+    }
+  },
+  "CPY": {
+    "0xC0": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "CPY #$44"
+      ]
+    },
+    "0xC4": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "CPY $44"
+      ]
+    },
+    "0xCC": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "CPY $4400"
+      ]
+    }
+  },
+  "CMP": {
+    "0xC1": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "CMP ($44,X)"
+      ]
+    },
+    "0xC5": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "CMP $44"
+      ]
+    },
+    "0xC9": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "CMP #$44"
+      ]
+    },
+    "0xCD": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "CMP $4400"
+      ]
+    },
+    "0xD1": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "CMP ($44),Y"
+      ]
+    },
+    "0xD5": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "CMP $44,X"
+      ]
+    },
+    "0xD9": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "CMP $4400,Y"
+      ]
+    },
+    "0xDD": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "CMP $4400,X"
+      ]
+    }
+  },
+  "DCP": {
+    "0xC3": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "DCP ($44,X)"
+      ]
+    },
+    "0xC7": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "DCP $44"
+      ]
+    },
+    "0xCF": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "DCP $4400"
+      ]
+    },
+    "0xD3": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "DCP ($44),Y"
+      ]
+    },
+    "0xD7": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "DCP $44,X"
+      ]
+    },
+    "0xDB": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "DCP $4400,Y"
+      ]
+    },
+    "0xDF": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "DCP $4400,X"
+      ]
+    }
+  },
+  "DEC": {
+    "0xC6": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "DEC $44"
+      ]
+    },
+    "0xCE": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "DEC $4400"
+      ]
+    },
+    "0xD6": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "DEC $44,X"
+      ]
+    },
+    "0xDE": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "DEC $4400,X"
+      ]
+    }
+  },
+  "INY": {
+    "0xC8": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "INY"
+      ]
+    }
+  },
+  "DEX": {
+    "0xCA": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "DEX"
+      ]
+    }
+  },
+  "AXS": {
+    "0xCB": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "AXS #$44"
+      ]
+    }
+  },
+  "BNE": {
+    "0xD0": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BNE $10",
+        "BNE label"
+      ]
+    }
+  },
+  "CLD": {
+    "0xD8": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "CLD"
+      ]
+    }
+  },
+  "CPX": {
+    "0xE0": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "CPX #$44"
+      ]
+    },
+    "0xE4": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "CPX $44"
+      ]
+    },
+    "0xEC": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "CPX $4400"
+      ]
+    }
+  },
+  "SBC": {
+    "0xE1": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "SBC ($44,X)"
+      ]
+    },
+    "0xE5": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "SBC $44"
+      ]
+    },
+    "0xE9": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "SBC #$44"
+      ]
+    },
+    "0xEB": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "SBC #$44"
+      ]
+    },
+    "0xED": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "SBC $4400"
+      ]
+    },
+    "0xF1": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "SBC ($44),Y"
+      ]
+    },
+    "0xF5": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "SBC $44,X"
+      ]
+    },
+    "0xF9": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "SBC $4400,Y"
+      ]
+    },
+    "0xFD": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "SBC $4400,X"
+      ]
+    }
+  },
+  "ISC": {
+    "0xE3": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "ISC ($44,X)"
+      ]
+    },
+    "0xE7": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ISC $44"
+      ]
+    },
+    "0xEF": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ISC $4400"
+      ]
+    },
+    "0xF3": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "ISC ($44),Y"
+      ]
+    },
+    "0xF7": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ISC $44,X"
+      ]
+    },
+    "0xFB": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "ISC $4400,Y"
+      ]
+    },
+    "0xFF": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ISC $4400,X"
+      ]
+    }
+  },
+  "INC": {
+    "0xE6": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "INC $44"
+      ]
+    },
+    "0xEE": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "INC $4400"
+      ]
+    },
+    "0xF6": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "INC $44,X"
+      ]
+    },
+    "0xFE": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "INC $4400,X"
+      ]
+    }
+  },
+  "INX": {
+    "0xE8": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "INX"
+      ]
+    }
+  },
+  "BEQ": {
+    "0xF0": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BEQ $10",
+        "BEQ label"
+      ]
+    }
+  },
+  "SED": {
+    "0xF8": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "SED"
+      ]
+    }
+  }
+}

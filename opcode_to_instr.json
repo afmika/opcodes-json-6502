@@ -1,0 +1,2826 @@
+{
+  "00+00": {
+    "hex": "0x00",
+    "instr": "BRK",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "BRK"
+      ]
+    }
+  },
+  "00+01": {
+    "hex": "0x01",
+    "instr": "ORA",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "ORA ($44,X)"
+      ]
+    }
+  },
+  "00+02": {
+    "hex": "0x02",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "00+03": {
+    "hex": "0x03",
+    "instr": "SLO",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "SLO ($44,X)"
+      ]
+    }
+  },
+  "00+04": {
+    "hex": "0x04",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "NOP $44"
+      ]
+    }
+  },
+  "00+05": {
+    "hex": "0x05",
+    "instr": "ORA",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ORA $44"
+      ]
+    }
+  },
+  "00+06": {
+    "hex": "0x06",
+    "instr": "ASL",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ASL $44"
+      ]
+    }
+  },
+  "00+07": {
+    "hex": "0x07",
+    "instr": "SLO",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "SLO $44"
+      ]
+    }
+  },
+  "00+08": {
+    "hex": "0x08",
+    "instr": "PHP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "PHP"
+      ]
+    }
+  },
+  "00+09": {
+    "hex": "0x09",
+    "instr": "ORA",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ORA #$44"
+      ]
+    }
+  },
+  "00+0A": {
+    "hex": "0x0A",
+    "instr": "ASL",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "ASL"
+      ]
+    }
+  },
+  "00+0B": {
+    "hex": "0x0B",
+    "instr": "ANC",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ANC #$44"
+      ]
+    }
+  },
+  "00+0C": {
+    "hex": "0x0C",
+    "instr": "NOP",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "NOP $4400"
+      ]
+    }
+  },
+  "00+0D": {
+    "hex": "0x0D",
+    "instr": "ORA",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ORA $4400"
+      ]
+    }
+  },
+  "00+0E": {
+    "hex": "0x0E",
+    "instr": "ASL",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ASL $4400"
+      ]
+    }
+  },
+  "00+0F": {
+    "hex": "0x0F",
+    "instr": "SLO",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "SLO $4400"
+      ]
+    }
+  },
+  "00+10": {
+    "hex": "0x10",
+    "instr": "BPL",
+    "mode": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BPL $10",
+        "BPL label"
+      ]
+    }
+  },
+  "00+11": {
+    "hex": "0x11",
+    "instr": "ORA",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "ORA ($44),Y"
+      ]
+    }
+  },
+  "00+12": {
+    "hex": "0x12",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "00+13": {
+    "hex": "0x13",
+    "instr": "SLO",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "SLO ($44),Y"
+      ]
+    }
+  },
+  "00+14": {
+    "hex": "0x14",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    }
+  },
+  "00+15": {
+    "hex": "0x15",
+    "instr": "ORA",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ORA $44,X"
+      ]
+    }
+  },
+  "00+16": {
+    "hex": "0x16",
+    "instr": "ASL",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ASL $44,X"
+      ]
+    }
+  },
+  "00+17": {
+    "hex": "0x17",
+    "instr": "SLO",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "SLO $44,X"
+      ]
+    }
+  },
+  "00+18": {
+    "hex": "0x18",
+    "instr": "CLC",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "CLC"
+      ]
+    }
+  },
+  "00+19": {
+    "hex": "0x19",
+    "instr": "ORA",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "ORA $4400,Y"
+      ]
+    }
+  },
+  "00+1A": {
+    "hex": "0x1A",
+    "instr": "NOP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    }
+  },
+  "00+1B": {
+    "hex": "0x1B",
+    "instr": "SLO",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "SLO $4400,Y"
+      ]
+    }
+  },
+  "00+1C": {
+    "hex": "0x1C",
+    "instr": "NOP",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    }
+  },
+  "00+1D": {
+    "hex": "0x1D",
+    "instr": "ORA",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ORA $4400,X"
+      ]
+    }
+  },
+  "00+1E": {
+    "hex": "0x1E",
+    "instr": "ASL",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ASL $4400,X"
+      ]
+    }
+  },
+  "00+1F": {
+    "hex": "0x1F",
+    "instr": "SLO",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "SLO $4400,X"
+      ]
+    }
+  },
+  "20+00": {
+    "hex": "0x20",
+    "instr": "JSR",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "JSR $4400"
+      ]
+    }
+  },
+  "20+01": {
+    "hex": "0x21",
+    "instr": "AND",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "AND ($44,X)"
+      ]
+    }
+  },
+  "20+02": {
+    "hex": "0x22",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "20+03": {
+    "hex": "0x23",
+    "instr": "RLA",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "RLA ($44,X)"
+      ]
+    }
+  },
+  "20+04": {
+    "hex": "0x24",
+    "instr": "BIT",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "BIT $44"
+      ]
+    }
+  },
+  "20+05": {
+    "hex": "0x25",
+    "instr": "AND",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "AND $44"
+      ]
+    }
+  },
+  "20+06": {
+    "hex": "0x26",
+    "instr": "ROL",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ROL $44"
+      ]
+    }
+  },
+  "20+07": {
+    "hex": "0x27",
+    "instr": "RLA",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "RLA $44"
+      ]
+    }
+  },
+  "20+08": {
+    "hex": "0x28",
+    "instr": "PLP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "PLP"
+      ]
+    }
+  },
+  "20+09": {
+    "hex": "0x29",
+    "instr": "AND",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "AND #$44"
+      ]
+    }
+  },
+  "20+0A": {
+    "hex": "0x2A",
+    "instr": "ROL",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "ROL"
+      ]
+    }
+  },
+  "20+0B": {
+    "hex": "0x2B",
+    "instr": "ANC",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ANC #$44"
+      ]
+    }
+  },
+  "20+0C": {
+    "hex": "0x2C",
+    "instr": "BIT",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "BIT $4400"
+      ]
+    }
+  },
+  "20+0D": {
+    "hex": "0x2D",
+    "instr": "AND",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "AND $4400"
+      ]
+    }
+  },
+  "20+0E": {
+    "hex": "0x2E",
+    "instr": "ROL",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ROL $4400"
+      ]
+    }
+  },
+  "20+0F": {
+    "hex": "0x2F",
+    "instr": "RLA",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "RLA $4400"
+      ]
+    }
+  },
+  "20+10": {
+    "hex": "0x30",
+    "instr": "BMI",
+    "mode": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BMI $10",
+        "BMI label"
+      ]
+    }
+  },
+  "20+11": {
+    "hex": "0x31",
+    "instr": "AND",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "AND ($44),Y"
+      ]
+    }
+  },
+  "20+12": {
+    "hex": "0x32",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "20+13": {
+    "hex": "0x33",
+    "instr": "RLA",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "RLA ($44),Y"
+      ]
+    }
+  },
+  "20+14": {
+    "hex": "0x34",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    }
+  },
+  "20+15": {
+    "hex": "0x35",
+    "instr": "AND",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "AND $44,X"
+      ]
+    }
+  },
+  "20+16": {
+    "hex": "0x36",
+    "instr": "ROL",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ROL $44,X"
+      ]
+    }
+  },
+  "20+17": {
+    "hex": "0x37",
+    "instr": "RLA",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "RLA $44,X"
+      ]
+    }
+  },
+  "20+18": {
+    "hex": "0x38",
+    "instr": "SEC",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "SEC"
+      ]
+    }
+  },
+  "20+19": {
+    "hex": "0x39",
+    "instr": "AND",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "AND $4400,Y"
+      ]
+    }
+  },
+  "20+1A": {
+    "hex": "0x3A",
+    "instr": "NOP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    }
+  },
+  "20+1B": {
+    "hex": "0x3B",
+    "instr": "RLA",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "RLA $4400,Y"
+      ]
+    }
+  },
+  "20+1C": {
+    "hex": "0x3C",
+    "instr": "NOP",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    }
+  },
+  "20+1D": {
+    "hex": "0x3D",
+    "instr": "AND",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "AND $4400,X"
+      ]
+    }
+  },
+  "20+1E": {
+    "hex": "0x3E",
+    "instr": "ROL",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ROL $4400,X"
+      ]
+    }
+  },
+  "20+1F": {
+    "hex": "0x3F",
+    "instr": "RLA",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "RLA $4400,X"
+      ]
+    }
+  },
+  "40+00": {
+    "hex": "0x40",
+    "instr": "RTI",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "RTI"
+      ]
+    }
+  },
+  "40+01": {
+    "hex": "0x41",
+    "instr": "EOR",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "EOR ($44,X)"
+      ]
+    }
+  },
+  "40+02": {
+    "hex": "0x42",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "40+03": {
+    "hex": "0x43",
+    "instr": "SRE",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "SRE ($44,X)"
+      ]
+    }
+  },
+  "40+04": {
+    "hex": "0x44",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "NOP $44"
+      ]
+    }
+  },
+  "40+05": {
+    "hex": "0x45",
+    "instr": "EOR",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "EOR $44"
+      ]
+    }
+  },
+  "40+06": {
+    "hex": "0x46",
+    "instr": "LSR",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LSR $44"
+      ]
+    }
+  },
+  "40+07": {
+    "hex": "0x47",
+    "instr": "SRE",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "SRE $44"
+      ]
+    }
+  },
+  "40+08": {
+    "hex": "0x48",
+    "instr": "PHA",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "PHA"
+      ]
+    }
+  },
+  "40+09": {
+    "hex": "0x49",
+    "instr": "EOR",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "EOR #$44"
+      ]
+    }
+  },
+  "40+0A": {
+    "hex": "0x4A",
+    "instr": "LSR",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "LSR"
+      ]
+    }
+  },
+  "40+0B": {
+    "hex": "0x4B",
+    "instr": "ALR",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ALR #$44"
+      ]
+    }
+  },
+  "40+0C": {
+    "hex": "0x4C",
+    "instr": "JMP",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "JMP $4400"
+      ]
+    }
+  },
+  "40+0D": {
+    "hex": "0x4D",
+    "instr": "EOR",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "EOR $4400"
+      ]
+    }
+  },
+  "40+0E": {
+    "hex": "0x4E",
+    "instr": "LSR",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LSR $4400"
+      ]
+    }
+  },
+  "40+0F": {
+    "hex": "0x4F",
+    "instr": "SRE",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "SRE $4400"
+      ]
+    }
+  },
+  "40+10": {
+    "hex": "0x50",
+    "instr": "BVC",
+    "mode": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BVC $10",
+        "BVC label"
+      ]
+    }
+  },
+  "40+11": {
+    "hex": "0x51",
+    "instr": "EOR",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "EOR ($44),Y"
+      ]
+    }
+  },
+  "40+12": {
+    "hex": "0x52",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "40+13": {
+    "hex": "0x53",
+    "instr": "SRE",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "SRE ($44),Y"
+      ]
+    }
+  },
+  "40+14": {
+    "hex": "0x54",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    }
+  },
+  "40+15": {
+    "hex": "0x55",
+    "instr": "EOR",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "EOR $44,X"
+      ]
+    }
+  },
+  "40+16": {
+    "hex": "0x56",
+    "instr": "LSR",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "LSR $44,X"
+      ]
+    }
+  },
+  "40+17": {
+    "hex": "0x57",
+    "instr": "SRE",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "SRE $44,X"
+      ]
+    }
+  },
+  "40+18": {
+    "hex": "0x58",
+    "instr": "CLI",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "CLI"
+      ]
+    }
+  },
+  "40+19": {
+    "hex": "0x59",
+    "instr": "EOR",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "EOR $4400,Y"
+      ]
+    }
+  },
+  "40+1A": {
+    "hex": "0x5A",
+    "instr": "NOP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    }
+  },
+  "40+1B": {
+    "hex": "0x5B",
+    "instr": "SRE",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "SRE $4400,Y"
+      ]
+    }
+  },
+  "40+1C": {
+    "hex": "0x5C",
+    "instr": "NOP",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    }
+  },
+  "40+1D": {
+    "hex": "0x5D",
+    "instr": "EOR",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "EOR $4400,X"
+      ]
+    }
+  },
+  "40+1E": {
+    "hex": "0x5E",
+    "instr": "LSR",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "LSR $4400,X"
+      ]
+    }
+  },
+  "40+1F": {
+    "hex": "0x5F",
+    "instr": "SRE",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "SRE $4400,X"
+      ]
+    }
+  },
+  "60+00": {
+    "hex": "0x60",
+    "instr": "RTS",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "RTS"
+      ]
+    }
+  },
+  "60+01": {
+    "hex": "0x61",
+    "instr": "ADC",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "ADC ($44,X)"
+      ]
+    }
+  },
+  "60+02": {
+    "hex": "0x62",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "60+03": {
+    "hex": "0x63",
+    "instr": "RRA",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "RRA ($44,X)"
+      ]
+    }
+  },
+  "60+04": {
+    "hex": "0x64",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "NOP $44"
+      ]
+    }
+  },
+  "60+05": {
+    "hex": "0x65",
+    "instr": "ADC",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ADC $44"
+      ]
+    }
+  },
+  "60+06": {
+    "hex": "0x66",
+    "instr": "ROR",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ROR $44"
+      ]
+    }
+  },
+  "60+07": {
+    "hex": "0x67",
+    "instr": "RRA",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "RRA $44"
+      ]
+    }
+  },
+  "60+08": {
+    "hex": "0x68",
+    "instr": "PLA",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "PLA"
+      ]
+    }
+  },
+  "60+09": {
+    "hex": "0x69",
+    "instr": "ADC",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ADC #$44"
+      ]
+    }
+  },
+  "60+0A": {
+    "hex": "0x6A",
+    "instr": "ROR",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "ROR"
+      ]
+    }
+  },
+  "60+0B": {
+    "hex": "0x6B",
+    "instr": "ARR",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "ARR #$44"
+      ]
+    }
+  },
+  "60+0C": {
+    "hex": "0x6C",
+    "instr": "JMP",
+    "mode": {
+      "notation": "(a)",
+      "name": "IND",
+      "examples": [
+        "JMP ($5597)"
+      ]
+    }
+  },
+  "60+0D": {
+    "hex": "0x6D",
+    "instr": "ADC",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ADC $4400"
+      ]
+    }
+  },
+  "60+0E": {
+    "hex": "0x6E",
+    "instr": "ROR",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ROR $4400"
+      ]
+    }
+  },
+  "60+0F": {
+    "hex": "0x6F",
+    "instr": "RRA",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "RRA $4400"
+      ]
+    }
+  },
+  "60+10": {
+    "hex": "0x70",
+    "instr": "BVS",
+    "mode": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BVS $10",
+        "BVS label"
+      ]
+    }
+  },
+  "60+11": {
+    "hex": "0x71",
+    "instr": "ADC",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "ADC ($44),Y"
+      ]
+    }
+  },
+  "60+12": {
+    "hex": "0x72",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "60+13": {
+    "hex": "0x73",
+    "instr": "RRA",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "RRA ($44),Y"
+      ]
+    }
+  },
+  "60+14": {
+    "hex": "0x74",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    }
+  },
+  "60+15": {
+    "hex": "0x75",
+    "instr": "ADC",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ADC $44,X"
+      ]
+    }
+  },
+  "60+16": {
+    "hex": "0x76",
+    "instr": "ROR",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ROR $44,X"
+      ]
+    }
+  },
+  "60+17": {
+    "hex": "0x77",
+    "instr": "RRA",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "RRA $44,X"
+      ]
+    }
+  },
+  "60+18": {
+    "hex": "0x78",
+    "instr": "SEI",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "SEI"
+      ]
+    }
+  },
+  "60+19": {
+    "hex": "0x79",
+    "instr": "ADC",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "ADC $4400,Y"
+      ]
+    }
+  },
+  "60+1A": {
+    "hex": "0x7A",
+    "instr": "NOP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    }
+  },
+  "60+1B": {
+    "hex": "0x7B",
+    "instr": "RRA",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "RRA $4400,Y"
+      ]
+    }
+  },
+  "60+1C": {
+    "hex": "0x7C",
+    "instr": "NOP",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    }
+  },
+  "60+1D": {
+    "hex": "0x7D",
+    "instr": "ADC",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ADC $4400,X"
+      ]
+    }
+  },
+  "60+1E": {
+    "hex": "0x7E",
+    "instr": "ROR",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ROR $4400,X"
+      ]
+    }
+  },
+  "60+1F": {
+    "hex": "0x7F",
+    "instr": "RRA",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "RRA $4400,X"
+      ]
+    }
+  },
+  "80+00": {
+    "hex": "0x80",
+    "instr": "NOP",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    }
+  },
+  "80+01": {
+    "hex": "0x81",
+    "instr": "STA",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "STA ($44,X)"
+      ]
+    }
+  },
+  "80+02": {
+    "hex": "0x82",
+    "instr": "NOP",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    }
+  },
+  "80+03": {
+    "hex": "0x83",
+    "instr": "SAX",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "SAX ($44,X)"
+      ]
+    }
+  },
+  "80+04": {
+    "hex": "0x84",
+    "instr": "STY",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "STY $44"
+      ]
+    }
+  },
+  "80+05": {
+    "hex": "0x85",
+    "instr": "STA",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "STA $44"
+      ]
+    }
+  },
+  "80+06": {
+    "hex": "0x86",
+    "instr": "STX",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "STX $44"
+      ]
+    }
+  },
+  "80+07": {
+    "hex": "0x87",
+    "instr": "SAX",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "SAX $44"
+      ]
+    }
+  },
+  "80+08": {
+    "hex": "0x88",
+    "instr": "DEY",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "DEY"
+      ]
+    }
+  },
+  "80+09": {
+    "hex": "0x89",
+    "instr": "NOP",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    }
+  },
+  "80+0A": {
+    "hex": "0x8A",
+    "instr": "TXA",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TXA"
+      ]
+    }
+  },
+  "80+0B": {
+    "hex": "0x8B",
+    "instr": "XAA",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "XAA #$44"
+      ]
+    }
+  },
+  "80+0C": {
+    "hex": "0x8C",
+    "instr": "STY",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "STY $4400"
+      ]
+    }
+  },
+  "80+0D": {
+    "hex": "0x8D",
+    "instr": "STA",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "STA $4400"
+      ]
+    }
+  },
+  "80+0E": {
+    "hex": "0x8E",
+    "instr": "STX",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "STX $4400"
+      ]
+    }
+  },
+  "80+0F": {
+    "hex": "0x8F",
+    "instr": "SAX",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "SAX $4400"
+      ]
+    }
+  },
+  "80+10": {
+    "hex": "0x90",
+    "instr": "BCC",
+    "mode": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BCC $10",
+        "BCC label"
+      ]
+    }
+  },
+  "80+11": {
+    "hex": "0x91",
+    "instr": "STA",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "STA ($44),Y"
+      ]
+    }
+  },
+  "80+12": {
+    "hex": "0x92",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "80+13": {
+    "hex": "0x93",
+    "instr": "AHX",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "AHX ($44),Y"
+      ]
+    }
+  },
+  "80+14": {
+    "hex": "0x94",
+    "instr": "STY",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "STY $44,X"
+      ]
+    }
+  },
+  "80+15": {
+    "hex": "0x95",
+    "instr": "STA",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "STA $44,X"
+      ]
+    }
+  },
+  "80+16": {
+    "hex": "0x96",
+    "instr": "STX",
+    "mode": {
+      "notation": "d,y",
+      "name": "ZPY",
+      "examples": [
+        "STX $44,Y"
+      ]
+    }
+  },
+  "80+17": {
+    "hex": "0x97",
+    "instr": "SAX",
+    "mode": {
+      "notation": "d,y",
+      "name": "ZPY",
+      "examples": [
+        "SAX $44,Y"
+      ]
+    }
+  },
+  "80+18": {
+    "hex": "0x98",
+    "instr": "TYA",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TYA"
+      ]
+    }
+  },
+  "80+19": {
+    "hex": "0x99",
+    "instr": "STA",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "STA $4400,Y"
+      ]
+    }
+  },
+  "80+1A": {
+    "hex": "0x9A",
+    "instr": "TXS",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TXS"
+      ]
+    }
+  },
+  "80+1B": {
+    "hex": "0x9B",
+    "instr": "TAS",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "TAS $4400,Y"
+      ]
+    }
+  },
+  "80+1C": {
+    "hex": "0x9C",
+    "instr": "SHY",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "SHY $4400,X"
+      ]
+    }
+  },
+  "80+1D": {
+    "hex": "0x9D",
+    "instr": "STA",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "STA $4400,X"
+      ]
+    }
+  },
+  "80+1E": {
+    "hex": "0x9E",
+    "instr": "SHX",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "SHX $4400,Y"
+      ]
+    }
+  },
+  "80+1F": {
+    "hex": "0x9F",
+    "instr": "AHX",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "AHX $4400,Y"
+      ]
+    }
+  },
+  "A0+00": {
+    "hex": "0xA0",
+    "instr": "LDY",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "LDY #$44"
+      ]
+    }
+  },
+  "A0+01": {
+    "hex": "0xA1",
+    "instr": "LDA",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "LDA ($44,X)"
+      ]
+    }
+  },
+  "A0+02": {
+    "hex": "0xA2",
+    "instr": "LDX",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "LDX #$44"
+      ]
+    }
+  },
+  "A0+03": {
+    "hex": "0xA3",
+    "instr": "LAX",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "LAX ($44,X)"
+      ]
+    }
+  },
+  "A0+04": {
+    "hex": "0xA4",
+    "instr": "LDY",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LDY $44"
+      ]
+    }
+  },
+  "A0+05": {
+    "hex": "0xA5",
+    "instr": "LDA",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LDA $44"
+      ]
+    }
+  },
+  "A0+06": {
+    "hex": "0xA6",
+    "instr": "LDX",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LDX $44"
+      ]
+    }
+  },
+  "A0+07": {
+    "hex": "0xA7",
+    "instr": "LAX",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "LAX $44"
+      ]
+    }
+  },
+  "A0+08": {
+    "hex": "0xA8",
+    "instr": "TAY",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TAY"
+      ]
+    }
+  },
+  "A0+09": {
+    "hex": "0xA9",
+    "instr": "LDA",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "LDA #$44"
+      ]
+    }
+  },
+  "A0+0A": {
+    "hex": "0xAA",
+    "instr": "TAX",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TAX"
+      ]
+    }
+  },
+  "A0+0B": {
+    "hex": "0xAB",
+    "instr": "LAX",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "LAX #$44"
+      ]
+    }
+  },
+  "A0+0C": {
+    "hex": "0xAC",
+    "instr": "LDY",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LDY $4400"
+      ]
+    }
+  },
+  "A0+0D": {
+    "hex": "0xAD",
+    "instr": "LDA",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LDA $4400"
+      ]
+    }
+  },
+  "A0+0E": {
+    "hex": "0xAE",
+    "instr": "LDX",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LDX $4400"
+      ]
+    }
+  },
+  "A0+0F": {
+    "hex": "0xAF",
+    "instr": "LAX",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "LAX $4400"
+      ]
+    }
+  },
+  "A0+10": {
+    "hex": "0xB0",
+    "instr": "BCS",
+    "mode": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BCS $10",
+        "BCS label"
+      ]
+    }
+  },
+  "A0+11": {
+    "hex": "0xB1",
+    "instr": "LDA",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "LDA ($44),Y"
+      ]
+    }
+  },
+  "A0+12": {
+    "hex": "0xB2",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "A0+13": {
+    "hex": "0xB3",
+    "instr": "LAX",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "LAX ($44),Y"
+      ]
+    }
+  },
+  "A0+14": {
+    "hex": "0xB4",
+    "instr": "LDY",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "LDY $44,X"
+      ]
+    }
+  },
+  "A0+15": {
+    "hex": "0xB5",
+    "instr": "LDA",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "LDA $44,X"
+      ]
+    }
+  },
+  "A0+16": {
+    "hex": "0xB6",
+    "instr": "LDX",
+    "mode": {
+      "notation": "d,y",
+      "name": "ZPY",
+      "examples": [
+        "LDX $44,Y"
+      ]
+    }
+  },
+  "A0+17": {
+    "hex": "0xB7",
+    "instr": "LAX",
+    "mode": {
+      "notation": "d,y",
+      "name": "ZPY",
+      "examples": [
+        "LAX $44,Y"
+      ]
+    }
+  },
+  "A0+18": {
+    "hex": "0xB8",
+    "instr": "CLV",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "CLV"
+      ]
+    }
+  },
+  "A0+19": {
+    "hex": "0xB9",
+    "instr": "LDA",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "LDA $4400,Y"
+      ]
+    }
+  },
+  "A0+1A": {
+    "hex": "0xBA",
+    "instr": "TSX",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "TSX"
+      ]
+    }
+  },
+  "A0+1B": {
+    "hex": "0xBB",
+    "instr": "LAS",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "LAS $4400,Y"
+      ]
+    }
+  },
+  "A0+1C": {
+    "hex": "0xBC",
+    "instr": "LDY",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "LDY $4400,X"
+      ]
+    }
+  },
+  "A0+1D": {
+    "hex": "0xBD",
+    "instr": "LDA",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "LDA $4400,X"
+      ]
+    }
+  },
+  "A0+1E": {
+    "hex": "0xBE",
+    "instr": "LDX",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "LDX $4400,Y"
+      ]
+    }
+  },
+  "A0+1F": {
+    "hex": "0xBF",
+    "instr": "LAX",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "LAX $4400,Y"
+      ]
+    }
+  },
+  "C0+00": {
+    "hex": "0xC0",
+    "instr": "CPY",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "CPY #$44"
+      ]
+    }
+  },
+  "C0+01": {
+    "hex": "0xC1",
+    "instr": "CMP",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "CMP ($44,X)"
+      ]
+    }
+  },
+  "C0+02": {
+    "hex": "0xC2",
+    "instr": "NOP",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    }
+  },
+  "C0+03": {
+    "hex": "0xC3",
+    "instr": "DCP",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "DCP ($44,X)"
+      ]
+    }
+  },
+  "C0+04": {
+    "hex": "0xC4",
+    "instr": "CPY",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "CPY $44"
+      ]
+    }
+  },
+  "C0+05": {
+    "hex": "0xC5",
+    "instr": "CMP",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "CMP $44"
+      ]
+    }
+  },
+  "C0+06": {
+    "hex": "0xC6",
+    "instr": "DEC",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "DEC $44"
+      ]
+    }
+  },
+  "C0+07": {
+    "hex": "0xC7",
+    "instr": "DCP",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "DCP $44"
+      ]
+    }
+  },
+  "C0+08": {
+    "hex": "0xC8",
+    "instr": "INY",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "INY"
+      ]
+    }
+  },
+  "C0+09": {
+    "hex": "0xC9",
+    "instr": "CMP",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "CMP #$44"
+      ]
+    }
+  },
+  "C0+0A": {
+    "hex": "0xCA",
+    "instr": "DEX",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "DEX"
+      ]
+    }
+  },
+  "C0+0B": {
+    "hex": "0xCB",
+    "instr": "AXS",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "AXS #$44"
+      ]
+    }
+  },
+  "C0+0C": {
+    "hex": "0xCC",
+    "instr": "CPY",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "CPY $4400"
+      ]
+    }
+  },
+  "C0+0D": {
+    "hex": "0xCD",
+    "instr": "CMP",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "CMP $4400"
+      ]
+    }
+  },
+  "C0+0E": {
+    "hex": "0xCE",
+    "instr": "DEC",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "DEC $4400"
+      ]
+    }
+  },
+  "C0+0F": {
+    "hex": "0xCF",
+    "instr": "DCP",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "DCP $4400"
+      ]
+    }
+  },
+  "C0+10": {
+    "hex": "0xD0",
+    "instr": "BNE",
+    "mode": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BNE $10",
+        "BNE label"
+      ]
+    }
+  },
+  "C0+11": {
+    "hex": "0xD1",
+    "instr": "CMP",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "CMP ($44),Y"
+      ]
+    }
+  },
+  "C0+12": {
+    "hex": "0xD2",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "C0+13": {
+    "hex": "0xD3",
+    "instr": "DCP",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "DCP ($44),Y"
+      ]
+    }
+  },
+  "C0+14": {
+    "hex": "0xD4",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    }
+  },
+  "C0+15": {
+    "hex": "0xD5",
+    "instr": "CMP",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "CMP $44,X"
+      ]
+    }
+  },
+  "C0+16": {
+    "hex": "0xD6",
+    "instr": "DEC",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "DEC $44,X"
+      ]
+    }
+  },
+  "C0+17": {
+    "hex": "0xD7",
+    "instr": "DCP",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "DCP $44,X"
+      ]
+    }
+  },
+  "C0+18": {
+    "hex": "0xD8",
+    "instr": "CLD",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "CLD"
+      ]
+    }
+  },
+  "C0+19": {
+    "hex": "0xD9",
+    "instr": "CMP",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "CMP $4400,Y"
+      ]
+    }
+  },
+  "C0+1A": {
+    "hex": "0xDA",
+    "instr": "NOP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    }
+  },
+  "C0+1B": {
+    "hex": "0xDB",
+    "instr": "DCP",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "DCP $4400,Y"
+      ]
+    }
+  },
+  "C0+1C": {
+    "hex": "0xDC",
+    "instr": "NOP",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    }
+  },
+  "C0+1D": {
+    "hex": "0xDD",
+    "instr": "CMP",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "CMP $4400,X"
+      ]
+    }
+  },
+  "C0+1E": {
+    "hex": "0xDE",
+    "instr": "DEC",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "DEC $4400,X"
+      ]
+    }
+  },
+  "C0+1F": {
+    "hex": "0xDF",
+    "instr": "DCP",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "DCP $4400,X"
+      ]
+    }
+  },
+  "E0+00": {
+    "hex": "0xE0",
+    "instr": "CPX",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "CPX #$44"
+      ]
+    }
+  },
+  "E0+01": {
+    "hex": "0xE1",
+    "instr": "SBC",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "SBC ($44,X)"
+      ]
+    }
+  },
+  "E0+02": {
+    "hex": "0xE2",
+    "instr": "NOP",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "NOP #$44"
+      ]
+    }
+  },
+  "E0+03": {
+    "hex": "0xE3",
+    "instr": "ISC",
+    "mode": {
+      "notation": "(d,x)",
+      "name": "INDX",
+      "examples": [
+        "ISC ($44,X)"
+      ]
+    }
+  },
+  "E0+04": {
+    "hex": "0xE4",
+    "instr": "CPX",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "CPX $44"
+      ]
+    }
+  },
+  "E0+05": {
+    "hex": "0xE5",
+    "instr": "SBC",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "SBC $44"
+      ]
+    }
+  },
+  "E0+06": {
+    "hex": "0xE6",
+    "instr": "INC",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "INC $44"
+      ]
+    }
+  },
+  "E0+07": {
+    "hex": "0xE7",
+    "instr": "ISC",
+    "mode": {
+      "notation": "d",
+      "name": "ZP",
+      "examples": [
+        "ISC $44"
+      ]
+    }
+  },
+  "E0+08": {
+    "hex": "0xE8",
+    "instr": "INX",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "INX"
+      ]
+    }
+  },
+  "E0+09": {
+    "hex": "0xE9",
+    "instr": "SBC",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "SBC #$44"
+      ]
+    }
+  },
+  "E0+0A": {
+    "hex": "0xEA",
+    "instr": "NOP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    }
+  },
+  "E0+0B": {
+    "hex": "0xEB",
+    "instr": "SBC",
+    "mode": {
+      "notation": "#i",
+      "name": "IMM",
+      "examples": [
+        "SBC #$44"
+      ]
+    }
+  },
+  "E0+0C": {
+    "hex": "0xEC",
+    "instr": "CPX",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "CPX $4400"
+      ]
+    }
+  },
+  "E0+0D": {
+    "hex": "0xED",
+    "instr": "SBC",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "SBC $4400"
+      ]
+    }
+  },
+  "E0+0E": {
+    "hex": "0xEE",
+    "instr": "INC",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "INC $4400"
+      ]
+    }
+  },
+  "E0+0F": {
+    "hex": "0xEF",
+    "instr": "ISC",
+    "mode": {
+      "notation": "a",
+      "name": "ABS",
+      "examples": [
+        "ISC $4400"
+      ]
+    }
+  },
+  "E0+10": {
+    "hex": "0xF0",
+    "instr": "BEQ",
+    "mode": {
+      "notation": "*+d",
+      "name": "REL",
+      "examples": [
+        "BEQ $10",
+        "BEQ label"
+      ]
+    }
+  },
+  "E0+11": {
+    "hex": "0xF1",
+    "instr": "SBC",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "SBC ($44),Y"
+      ]
+    }
+  },
+  "E0+12": {
+    "hex": "0xF2",
+    "instr": "STP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "STP"
+      ]
+    }
+  },
+  "E0+13": {
+    "hex": "0xF3",
+    "instr": "ISC",
+    "mode": {
+      "notation": "(d),y",
+      "name": "INDY",
+      "examples": [
+        "ISC ($44),Y"
+      ]
+    }
+  },
+  "E0+14": {
+    "hex": "0xF4",
+    "instr": "NOP",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "NOP $44,X"
+      ]
+    }
+  },
+  "E0+15": {
+    "hex": "0xF5",
+    "instr": "SBC",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "SBC $44,X"
+      ]
+    }
+  },
+  "E0+16": {
+    "hex": "0xF6",
+    "instr": "INC",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "INC $44,X"
+      ]
+    }
+  },
+  "E0+17": {
+    "hex": "0xF7",
+    "instr": "ISC",
+    "mode": {
+      "notation": "d,x",
+      "name": "ZPX",
+      "examples": [
+        "ISC $44,X"
+      ]
+    }
+  },
+  "E0+18": {
+    "hex": "0xF8",
+    "instr": "SED",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "SED"
+      ]
+    }
+  },
+  "E0+19": {
+    "hex": "0xF9",
+    "instr": "SBC",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "SBC $4400,Y"
+      ]
+    }
+  },
+  "E0+1A": {
+    "hex": "0xFA",
+    "instr": "NOP",
+    "mode": {
+      "notation": null,
+      "name": "IMPL",
+      "examples": [
+        "NOP"
+      ]
+    }
+  },
+  "E0+1B": {
+    "hex": "0xFB",
+    "instr": "ISC",
+    "mode": {
+      "notation": "a,y",
+      "name": "ABSY",
+      "examples": [
+        "ISC $4400,Y"
+      ]
+    }
+  },
+  "E0+1C": {
+    "hex": "0xFC",
+    "instr": "NOP",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "NOP $4400,X"
+      ]
+    }
+  },
+  "E0+1D": {
+    "hex": "0xFD",
+    "instr": "SBC",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "SBC $4400,X"
+      ]
+    }
+  },
+  "E0+1E": {
+    "hex": "0xFE",
+    "instr": "INC",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "INC $4400,X"
+      ]
+    }
+  },
+  "E0+1F": {
+    "hex": "0xFF",
+    "instr": "ISC",
+    "mode": {
+      "notation": "a,x",
+      "name": "ABSX",
+      "examples": [
+        "ISC $4400,X"
+      ]
+    }
+  }
+}
