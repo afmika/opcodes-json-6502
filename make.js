@@ -3,7 +3,7 @@ const fs = require("fs");
 // https://www.nesdev.org/wiki/CPU_unofficial_opcodes
 
 // !! includes unofficial opcodes !!
-const json = require("./original.json");
+const json = require("./files/original.json");
 const assert = require("assert");
 
 // http://www.6502.org/tutorials/6502opcodes.html
@@ -104,7 +104,7 @@ function instrToRustMap() {
     return rows.join('\n');
 }
 
-fs.writeFileSync("opcode_to_instr.json", JSON.stringify(opcodeToInstruction(), null, 2));
-fs.writeFileSync("instr_to_opcodes.json", JSON.stringify(instrToOpcodes(), null, 2));
+fs.writeFileSync("./files/opcode_to_instr.json", JSON.stringify(opcodeToInstruction(), null, 2));
+fs.writeFileSync("./files/instr_to_opcodes.json", JSON.stringify(instrToOpcodes(), null, 2));
 
-fs.writeFileSync("opcodes.rs", instrToRustMap());
+fs.writeFileSync("./files/opcodes.rs", instrToRustMap());
