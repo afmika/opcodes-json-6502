@@ -83,24 +83,58 @@ function instrToOpcodes() {
     return ans;
 }
 
+function instrToOpcodes() {
+    const json = opcodeToInstruction();
+    const ans = {};
+    for (const v of Object.values(json)) {
+        if (!ans[v.instr]) {
+            ans[v.instr] = {};
+        }
+        ans[v.instr][v.hex] = {...v.mode};
+    }
+    return ans;
+}
+
 // example rust code generation
 function instrToRustMap() {
-    const format = '(Opcode::new(Instr::{INSTR}, AdrMode::{MODE}, vec![{EXAMPLES}]), {OPCODE})';
+    // (instr, mode) => [(opcode, examples)*]
+    const row_fmt = '((Instr::{INSTR}, AdrMode::{ADRMODE}), vec![{OPCODES}])';
     const json = instrToOpcodes();
     const rows = [];
+
+    // group into instr, adrmode pairs
+    const key = (instr, mode) => instr + '::' + mode.name;
+    const get = (k) => k.split('::');
+    const group = {};
     for (const [instr, json_modes] of Object.entries(json)) {
         for (const [opcode, mode] of Object.entries(json_modes)) {
-            const {_, name, examples} = mode;
-            const variables = {
-                'INSTR': instr, 
-                'MODE': name, 
-                'EXAMPLES': examples.map((e) => `"${e}".to_string()`).join(', '), 
-                'OPCODE': opcode
-            };
-            rows.push(inject(format, variables) + ',');
+            const h = key(instr, mode);
+            if (!group[h]) {
+                group[h] = [];
+            }
+            group[h].push({opcode, mode});
         }
-        rows.push('');
     }
+
+    for (const [k, op_mode] of Object.entries(group)) {
+        const [instr, addr] = get(k);
+        const opcodes = op_mode.map((o) => {
+            const {opcode, mode} = o;
+            const examples =  mode.examples.map((e) => `"${e}".to_string()`).join(', ');
+            const fmt = 'Opcode::new({OPCODE}, vec![{EXAMPLES}])';
+            return inject(fmt, {
+                'OPCODE': opcode,
+                'EXAMPLES': examples
+            });
+        });
+        const curr_row = inject(row_fmt, {
+            'INSTR': instr,
+            'ADRMODE': addr,
+            'OPCODES': opcodes.join(',\n\t')
+        });
+        rows.push(curr_row + ',');
+    }
+
     return rows.join('\n');
 }
 
