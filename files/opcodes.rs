@@ -19,7 +19,8 @@
 	Opcode::new(0x92, vec!["STP".to_string()]),
 	Opcode::new(0xB2, vec!["STP".to_string()]),
 	Opcode::new(0xD2, vec!["STP".to_string()]),
-	Opcode::new(0xF2, vec!["STP".to_string()])]),
+	Opcode::new(0xF2, vec!["STP".to_string()])
+]),
 ((Instr::SLO, AdrMode::INDX), vec![Opcode::new(0x03, vec!["SLO ($BB,X)".to_string()])]),
 ((Instr::SLO, AdrMode::ZP), vec![Opcode::new(0x07, vec!["SLO $BB".to_string()])]),
 ((Instr::SLO, AdrMode::ABS), vec![Opcode::new(0x0F, vec!["SLO $LLHH".to_string()])]),
@@ -30,7 +31,8 @@
 ((Instr::NOP, AdrMode::ZP), vec![
 	Opcode::new(0x04, vec!["NOP $BB".to_string()]),
 	Opcode::new(0x44, vec!["NOP $BB".to_string()]),
-	Opcode::new(0x64, vec!["NOP $BB".to_string()])]),
+	Opcode::new(0x64, vec!["NOP $BB".to_string()])
+]),
 ((Instr::NOP, AdrMode::ABS), vec![Opcode::new(0x0C, vec!["NOP $LLHH".to_string()])]),
 ((Instr::NOP, AdrMode::ZPX), vec![
 	Opcode::new(0x14, vec!["NOP $BB,X".to_string()]),
@@ -38,7 +40,8 @@
 	Opcode::new(0x54, vec!["NOP $BB,X".to_string()]),
 	Opcode::new(0x74, vec!["NOP $BB,X".to_string()]),
 	Opcode::new(0xD4, vec!["NOP $BB,X".to_string()]),
-	Opcode::new(0xF4, vec!["NOP $BB,X".to_string()])]),
+	Opcode::new(0xF4, vec!["NOP $BB,X".to_string()])
+]),
 ((Instr::NOP, AdrMode::IMPL), vec![
 	Opcode::new(0x1A, vec!["NOP".to_string()]),
 	Opcode::new(0x3A, vec!["NOP".to_string()]),
@@ -46,20 +49,23 @@
 	Opcode::new(0x7A, vec!["NOP".to_string()]),
 	Opcode::new(0xDA, vec!["NOP".to_string()]),
 	Opcode::new(0xEA, vec!["NOP".to_string()]),
-	Opcode::new(0xFA, vec!["NOP".to_string()])]),
+	Opcode::new(0xFA, vec!["NOP".to_string()])
+]),
 ((Instr::NOP, AdrMode::ABSX), vec![
 	Opcode::new(0x1C, vec!["NOP $LLHH,X".to_string()]),
 	Opcode::new(0x3C, vec!["NOP $LLHH,X".to_string()]),
 	Opcode::new(0x5C, vec!["NOP $LLHH,X".to_string()]),
 	Opcode::new(0x7C, vec!["NOP $LLHH,X".to_string()]),
 	Opcode::new(0xDC, vec!["NOP $LLHH,X".to_string()]),
-	Opcode::new(0xFC, vec!["NOP $LLHH,X".to_string()])]),
+	Opcode::new(0xFC, vec!["NOP $LLHH,X".to_string()])
+]),
 ((Instr::NOP, AdrMode::IMM), vec![
 	Opcode::new(0x80, vec!["NOP #$BB".to_string()]),
 	Opcode::new(0x82, vec!["NOP #$BB".to_string()]),
 	Opcode::new(0x89, vec!["NOP #$BB".to_string()]),
 	Opcode::new(0xC2, vec!["NOP #$BB".to_string()]),
-	Opcode::new(0xE2, vec!["NOP #$BB".to_string()])]),
+	Opcode::new(0xE2, vec!["NOP #$BB".to_string()])
+]),
 ((Instr::ASL, AdrMode::ZP), vec![Opcode::new(0x06, vec!["ASL $BB".to_string()])]),
 ((Instr::ASL, AdrMode::IMPL), vec![Opcode::new(0x0A, vec!["ASL".to_string()])]),
 ((Instr::ASL, AdrMode::ABS), vec![Opcode::new(0x0E, vec!["ASL $LLHH".to_string()])]),
@@ -68,7 +74,8 @@
 ((Instr::PHP, AdrMode::IMPL), vec![Opcode::new(0x08, vec!["PHP".to_string()])]),
 ((Instr::ANC, AdrMode::IMM), vec![
 	Opcode::new(0x0B, vec!["ANC #$BB".to_string()]),
-	Opcode::new(0x2B, vec!["ANC #$BB".to_string()])]),
+	Opcode::new(0x2B, vec!["ANC #$BB".to_string()])
+]),
 ((Instr::BPL, AdrMode::REL), vec![Opcode::new(0x10, vec!["BPL $BB".to_string(), "BPL label".to_string()])]),
 ((Instr::CLC, AdrMode::IMPL), vec![Opcode::new(0x18, vec!["CLC".to_string()])]),
 ((Instr::JSR, AdrMode::ABS), vec![Opcode::new(0x20, vec!["JSR $LLHH".to_string()])]),
@@ -242,7 +249,8 @@
 ((Instr::SBC, AdrMode::ZP), vec![Opcode::new(0xE5, vec!["SBC $BB".to_string()])]),
 ((Instr::SBC, AdrMode::IMM), vec![
 	Opcode::new(0xE9, vec!["SBC #$BB".to_string()]),
-	Opcode::new(0xEB, vec!["SBC #$BB".to_string()])]),
+	Opcode::new(0xEB, vec!["SBC #$BB".to_string()])
+]),
 ((Instr::SBC, AdrMode::ABS), vec![Opcode::new(0xED, vec!["SBC $LLHH".to_string()])]),
 ((Instr::SBC, AdrMode::INDY), vec![Opcode::new(0xF1, vec!["SBC ($BB),Y".to_string()])]),
 ((Instr::SBC, AdrMode::ZPX), vec![Opcode::new(0xF5, vec!["SBC $BB,X".to_string()])]),

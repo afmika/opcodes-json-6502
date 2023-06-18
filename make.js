@@ -127,10 +127,12 @@ function instrToRustMap() {
                 'EXAMPLES': examples
             });
         });
+        const start = opcodes.length > 1 ? '\n\t' : '';
+        const end = opcodes.length > 1 ? '\n' : '';
         const curr_row = inject(row_fmt, {
             'INSTR': instr,
             'ADRMODE': addr,
-            'OPCODES': (opcodes.length > 1 ? '\n\t' : '') + opcodes.join(',\n\t')
+            'OPCODES': start + opcodes.join(',\n\t') + end
         });
         rows.push(curr_row + ',');
     }
