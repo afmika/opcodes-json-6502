@@ -9,23 +9,23 @@ const assert = require("assert");
 // http://www.6502.org/tutorials/6502opcodes.html
 const addr_modes = {
     null: { name: 'IMPL', examples: ['{OP}'] }, // NOP | BRK
-    '#i': { name: 'IMM', examples: ['{OP} #$44'] }, // LDA #$44
+    '#i': { name: 'IMM', examples: ['{OP} #$BB'] }, // LDA #$BB
 
-    '(a)': { name: 'IND', examples: ['{OP} ($5597)'] }, // JMP ($5597)
-    '(d,x)': { name: 'INDX', examples: ['{OP} ($44,X)'] }, // LDA ($44,X)
-    '(d),y': { name: 'INDY', examples: ['{OP} ($44),Y'] }, // LDA ($44),Y
+    '(a)': { name: 'IND', examples: ['{OP} ($LLHH)'] }, // JMP ($LLHH)
+    '(d,x)': { name: 'INDX', examples: ['{OP} ($BB,X)'] }, // LDA ($BB,X)
+    '(d),y': { name: 'INDY', examples: ['{OP} ($BB),Y'] }, // LDA ($BB),Y
 
-    'd': { name: 'ZP', examples: ['{OP} $44'] }, // DEC $44
-    'd,x': { name: 'ZPX', examples: ['{OP} $44,X'] },  // DEC $44,X
-    'd,y': { name: 'ZPY', examples: ['{OP} $44,Y'] }, // DEC $44,Y
+    'd': { name: 'ZP', examples: ['{OP} $BB'] }, // DEC $BB
+    'd,x': { name: 'ZPX', examples: ['{OP} $BB,X'] },  // DEC $BB,X
+    'd,y': { name: 'ZPY', examples: ['{OP} $BB,Y'] }, // DEC $BB,Y
 
     // note: all branches are relative mode & two bytes length
     // BXX label
-    '*+d': { name: 'REL', examples: ['{OP} $10', '{OP} label'] },  // BPL $10 | BPL label
+    '*+d': { name: 'REL', examples: ['{OP} $BB', '{OP} label'] },  // BPL $BB | BPL label
 
-    'a': { name: 'ABS', examples: ['{OP} $4400'] }, // ADC $4400 | JMP $5597
-    'a,x': { name: 'ABSX', examples: ['{OP} $4400,X'] }, // ADC $4400,X
-    'a,y': { name: 'ABSY', examples: ['{OP} $4400,Y'] }  // ADC $4400,Y
+    'a': { name: 'ABS', examples: ['{OP} $LLHH'] }, // ADC $4400 | JMP $5597
+    'a,x': { name: 'ABSX', examples: ['{OP} $LLHH,X'] }, // ADC $LLHH,X
+    'a,y': { name: 'ABSY', examples: ['{OP} $LLHH,Y'] }  // ADC $LLHH,Y
 };
 
 
@@ -130,7 +130,7 @@ function instrToRustMap() {
         const curr_row = inject(row_fmt, {
             'INSTR': instr,
             'ADRMODE': addr,
-            'OPCODES': opcodes.join(',\n\t')
+            'OPCODES': (opcodes.length > 1 ? '\n\t' : '') + opcodes.join(',\n\t')
         });
         rows.push(curr_row + ',');
     }

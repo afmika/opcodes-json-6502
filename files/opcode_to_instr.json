@@ -17,7 +17,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "ORA ($44,X)"
+        "ORA ($BB,X)"
       ]
     }
   },
@@ -39,7 +39,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "SLO ($44,X)"
+        "SLO ($BB,X)"
       ]
     }
   },
@@ -50,7 +50,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "NOP $44"
+        "NOP $BB"
       ]
     }
   },
@@ -61,7 +61,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "ORA $44"
+        "ORA $BB"
       ]
     }
   },
@@ -72,7 +72,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "ASL $44"
+        "ASL $BB"
       ]
     }
   },
@@ -83,7 +83,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "SLO $44"
+        "SLO $BB"
       ]
     }
   },
@@ -105,7 +105,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "ORA #$44"
+        "ORA #$BB"
       ]
     }
   },
@@ -127,7 +127,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "ANC #$44"
+        "ANC #$BB"
       ]
     }
   },
@@ -138,7 +138,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "NOP $4400"
+        "NOP $LLHH"
       ]
     }
   },
@@ -149,7 +149,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "ORA $4400"
+        "ORA $LLHH"
       ]
     }
   },
@@ -160,7 +160,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "ASL $4400"
+        "ASL $LLHH"
       ]
     }
   },
@@ -171,7 +171,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "SLO $4400"
+        "SLO $LLHH"
       ]
     }
   },
@@ -182,7 +182,7 @@
       "notation": "*+d",
       "name": "REL",
       "examples": [
-        "BPL $10",
+        "BPL $BB",
         "BPL label"
       ]
     }
@@ -194,7 +194,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "ORA ($44),Y"
+        "ORA ($BB),Y"
       ]
     }
   },
@@ -216,7 +216,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "SLO ($44),Y"
+        "SLO ($BB),Y"
       ]
     }
   },
@@ -227,7 +227,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "NOP $44,X"
+        "NOP $BB,X"
       ]
     }
   },
@@ -238,7 +238,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "ORA $44,X"
+        "ORA $BB,X"
       ]
     }
   },
@@ -249,7 +249,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "ASL $44,X"
+        "ASL $BB,X"
       ]
     }
   },
@@ -260,7 +260,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "SLO $44,X"
+        "SLO $BB,X"
       ]
     }
   },
@@ -282,7 +282,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "ORA $4400,Y"
+        "ORA $LLHH,Y"
       ]
     }
   },
@@ -304,7 +304,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "SLO $4400,Y"
+        "SLO $LLHH,Y"
       ]
     }
   },
@@ -315,7 +315,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "NOP $4400,X"
+        "NOP $LLHH,X"
       ]
     }
   },
@@ -326,7 +326,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "ORA $4400,X"
+        "ORA $LLHH,X"
       ]
     }
   },
@@ -337,7 +337,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "ASL $4400,X"
+        "ASL $LLHH,X"
       ]
     }
   },
@@ -348,7 +348,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "SLO $4400,X"
+        "SLO $LLHH,X"
       ]
     }
   },
@@ -359,7 +359,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "JSR $4400"
+        "JSR $LLHH"
       ]
     }
   },
@@ -370,7 +370,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "AND ($44,X)"
+        "AND ($BB,X)"
       ]
     }
   },
@@ -392,7 +392,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "RLA ($44,X)"
+        "RLA ($BB,X)"
       ]
     }
   },
@@ -403,7 +403,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "BIT $44"
+        "BIT $BB"
       ]
     }
   },
@@ -414,7 +414,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "AND $44"
+        "AND $BB"
       ]
     }
   },
@@ -425,7 +425,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "ROL $44"
+        "ROL $BB"
       ]
     }
   },
@@ -436,7 +436,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "RLA $44"
+        "RLA $BB"
       ]
     }
   },
@@ -458,7 +458,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "AND #$44"
+        "AND #$BB"
       ]
     }
   },
@@ -480,7 +480,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "ANC #$44"
+        "ANC #$BB"
       ]
     }
   },
@@ -491,7 +491,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "BIT $4400"
+        "BIT $LLHH"
       ]
     }
   },
@@ -502,7 +502,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "AND $4400"
+        "AND $LLHH"
       ]
     }
   },
@@ -513,7 +513,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "ROL $4400"
+        "ROL $LLHH"
       ]
     }
   },
@@ -524,7 +524,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "RLA $4400"
+        "RLA $LLHH"
       ]
     }
   },
@@ -535,7 +535,7 @@
       "notation": "*+d",
       "name": "REL",
       "examples": [
-        "BMI $10",
+        "BMI $BB",
         "BMI label"
       ]
     }
@@ -547,7 +547,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "AND ($44),Y"
+        "AND ($BB),Y"
       ]
     }
   },
@@ -569,7 +569,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "RLA ($44),Y"
+        "RLA ($BB),Y"
       ]
     }
   },
@@ -580,7 +580,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "NOP $44,X"
+        "NOP $BB,X"
       ]
     }
   },
@@ -591,7 +591,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "AND $44,X"
+        "AND $BB,X"
       ]
     }
   },
@@ -602,7 +602,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "ROL $44,X"
+        "ROL $BB,X"
       ]
     }
   },
@@ -613,7 +613,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "RLA $44,X"
+        "RLA $BB,X"
       ]
     }
   },
@@ -635,7 +635,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "AND $4400,Y"
+        "AND $LLHH,Y"
       ]
     }
   },
@@ -657,7 +657,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "RLA $4400,Y"
+        "RLA $LLHH,Y"
       ]
     }
   },
@@ -668,7 +668,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "NOP $4400,X"
+        "NOP $LLHH,X"
       ]
     }
   },
@@ -679,7 +679,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "AND $4400,X"
+        "AND $LLHH,X"
       ]
     }
   },
@@ -690,7 +690,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "ROL $4400,X"
+        "ROL $LLHH,X"
       ]
     }
   },
@@ -701,7 +701,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "RLA $4400,X"
+        "RLA $LLHH,X"
       ]
     }
   },
@@ -723,7 +723,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "EOR ($44,X)"
+        "EOR ($BB,X)"
       ]
     }
   },
@@ -745,7 +745,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "SRE ($44,X)"
+        "SRE ($BB,X)"
       ]
     }
   },
@@ -756,7 +756,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "NOP $44"
+        "NOP $BB"
       ]
     }
   },
@@ -767,7 +767,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "EOR $44"
+        "EOR $BB"
       ]
     }
   },
@@ -778,7 +778,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "LSR $44"
+        "LSR $BB"
       ]
     }
   },
@@ -789,7 +789,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "SRE $44"
+        "SRE $BB"
       ]
     }
   },
@@ -811,7 +811,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "EOR #$44"
+        "EOR #$BB"
       ]
     }
   },
@@ -833,7 +833,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "ALR #$44"
+        "ALR #$BB"
       ]
     }
   },
@@ -844,7 +844,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "JMP $4400"
+        "JMP $LLHH"
       ]
     }
   },
@@ -855,7 +855,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "EOR $4400"
+        "EOR $LLHH"
       ]
     }
   },
@@ -866,7 +866,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "LSR $4400"
+        "LSR $LLHH"
       ]
     }
   },
@@ -877,7 +877,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "SRE $4400"
+        "SRE $LLHH"
       ]
     }
   },
@@ -888,7 +888,7 @@
       "notation": "*+d",
       "name": "REL",
       "examples": [
-        "BVC $10",
+        "BVC $BB",
         "BVC label"
       ]
     }
@@ -900,7 +900,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "EOR ($44),Y"
+        "EOR ($BB),Y"
       ]
     }
   },
@@ -922,7 +922,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "SRE ($44),Y"
+        "SRE ($BB),Y"
       ]
     }
   },
@@ -933,7 +933,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "NOP $44,X"
+        "NOP $BB,X"
       ]
     }
   },
@@ -944,7 +944,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "EOR $44,X"
+        "EOR $BB,X"
       ]
     }
   },
@@ -955,7 +955,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "LSR $44,X"
+        "LSR $BB,X"
       ]
     }
   },
@@ -966,7 +966,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "SRE $44,X"
+        "SRE $BB,X"
       ]
     }
   },
@@ -988,7 +988,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "EOR $4400,Y"
+        "EOR $LLHH,Y"
       ]
     }
   },
@@ -1010,7 +1010,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "SRE $4400,Y"
+        "SRE $LLHH,Y"
       ]
     }
   },
@@ -1021,7 +1021,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "NOP $4400,X"
+        "NOP $LLHH,X"
       ]
     }
   },
@@ -1032,7 +1032,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "EOR $4400,X"
+        "EOR $LLHH,X"
       ]
     }
   },
@@ -1043,7 +1043,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "LSR $4400,X"
+        "LSR $LLHH,X"
       ]
     }
   },
@@ -1054,7 +1054,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "SRE $4400,X"
+        "SRE $LLHH,X"
       ]
     }
   },
@@ -1076,7 +1076,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "ADC ($44,X)"
+        "ADC ($BB,X)"
       ]
     }
   },
@@ -1098,7 +1098,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "RRA ($44,X)"
+        "RRA ($BB,X)"
       ]
     }
   },
@@ -1109,7 +1109,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "NOP $44"
+        "NOP $BB"
       ]
     }
   },
@@ -1120,7 +1120,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "ADC $44"
+        "ADC $BB"
       ]
     }
   },
@@ -1131,7 +1131,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "ROR $44"
+        "ROR $BB"
       ]
     }
   },
@@ -1142,7 +1142,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "RRA $44"
+        "RRA $BB"
       ]
     }
   },
@@ -1164,7 +1164,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "ADC #$44"
+        "ADC #$BB"
       ]
     }
   },
@@ -1186,7 +1186,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "ARR #$44"
+        "ARR #$BB"
       ]
     }
   },
@@ -1197,7 +1197,7 @@
       "notation": "(a)",
       "name": "IND",
       "examples": [
-        "JMP ($5597)"
+        "JMP ($LLHH)"
       ]
     }
   },
@@ -1208,7 +1208,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "ADC $4400"
+        "ADC $LLHH"
       ]
     }
   },
@@ -1219,7 +1219,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "ROR $4400"
+        "ROR $LLHH"
       ]
     }
   },
@@ -1230,7 +1230,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "RRA $4400"
+        "RRA $LLHH"
       ]
     }
   },
@@ -1241,7 +1241,7 @@
       "notation": "*+d",
       "name": "REL",
       "examples": [
-        "BVS $10",
+        "BVS $BB",
         "BVS label"
       ]
     }
@@ -1253,7 +1253,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "ADC ($44),Y"
+        "ADC ($BB),Y"
       ]
     }
   },
@@ -1275,7 +1275,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "RRA ($44),Y"
+        "RRA ($BB),Y"
       ]
     }
   },
@@ -1286,7 +1286,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "NOP $44,X"
+        "NOP $BB,X"
       ]
     }
   },
@@ -1297,7 +1297,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "ADC $44,X"
+        "ADC $BB,X"
       ]
     }
   },
@@ -1308,7 +1308,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "ROR $44,X"
+        "ROR $BB,X"
       ]
     }
   },
@@ -1319,7 +1319,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "RRA $44,X"
+        "RRA $BB,X"
       ]
     }
   },
@@ -1341,7 +1341,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "ADC $4400,Y"
+        "ADC $LLHH,Y"
       ]
     }
   },
@@ -1363,7 +1363,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "RRA $4400,Y"
+        "RRA $LLHH,Y"
       ]
     }
   },
@@ -1374,7 +1374,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "NOP $4400,X"
+        "NOP $LLHH,X"
       ]
     }
   },
@@ -1385,7 +1385,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "ADC $4400,X"
+        "ADC $LLHH,X"
       ]
     }
   },
@@ -1396,7 +1396,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "ROR $4400,X"
+        "ROR $LLHH,X"
       ]
     }
   },
@@ -1407,7 +1407,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "RRA $4400,X"
+        "RRA $LLHH,X"
       ]
     }
   },
@@ -1418,7 +1418,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "NOP #$44"
+        "NOP #$BB"
       ]
     }
   },
@@ -1429,7 +1429,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "STA ($44,X)"
+        "STA ($BB,X)"
       ]
     }
   },
@@ -1440,7 +1440,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "NOP #$44"
+        "NOP #$BB"
       ]
     }
   },
@@ -1451,7 +1451,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "SAX ($44,X)"
+        "SAX ($BB,X)"
       ]
     }
   },
@@ -1462,7 +1462,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "STY $44"
+        "STY $BB"
       ]
     }
   },
@@ -1473,7 +1473,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "STA $44"
+        "STA $BB"
       ]
     }
   },
@@ -1484,7 +1484,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "STX $44"
+        "STX $BB"
       ]
     }
   },
@@ -1495,7 +1495,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "SAX $44"
+        "SAX $BB"
       ]
     }
   },
@@ -1517,7 +1517,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "NOP #$44"
+        "NOP #$BB"
       ]
     }
   },
@@ -1539,7 +1539,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "XAA #$44"
+        "XAA #$BB"
       ]
     }
   },
@@ -1550,7 +1550,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "STY $4400"
+        "STY $LLHH"
       ]
     }
   },
@@ -1561,7 +1561,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "STA $4400"
+        "STA $LLHH"
       ]
     }
   },
@@ -1572,7 +1572,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "STX $4400"
+        "STX $LLHH"
       ]
     }
   },
@@ -1583,7 +1583,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "SAX $4400"
+        "SAX $LLHH"
       ]
     }
   },
@@ -1594,7 +1594,7 @@
       "notation": "*+d",
       "name": "REL",
       "examples": [
-        "BCC $10",
+        "BCC $BB",
         "BCC label"
       ]
     }
@@ -1606,7 +1606,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "STA ($44),Y"
+        "STA ($BB),Y"
       ]
     }
   },
@@ -1628,7 +1628,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "AHX ($44),Y"
+        "AHX ($BB),Y"
       ]
     }
   },
@@ -1639,7 +1639,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "STY $44,X"
+        "STY $BB,X"
       ]
     }
   },
@@ -1650,7 +1650,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "STA $44,X"
+        "STA $BB,X"
       ]
     }
   },
@@ -1661,7 +1661,7 @@
       "notation": "d,y",
       "name": "ZPY",
       "examples": [
-        "STX $44,Y"
+        "STX $BB,Y"
       ]
     }
   },
@@ -1672,7 +1672,7 @@
       "notation": "d,y",
       "name": "ZPY",
       "examples": [
-        "SAX $44,Y"
+        "SAX $BB,Y"
       ]
     }
   },
@@ -1694,7 +1694,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "STA $4400,Y"
+        "STA $LLHH,Y"
       ]
     }
   },
@@ -1716,7 +1716,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "TAS $4400,Y"
+        "TAS $LLHH,Y"
       ]
     }
   },
@@ -1727,7 +1727,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "SHY $4400,X"
+        "SHY $LLHH,X"
       ]
     }
   },
@@ -1738,7 +1738,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "STA $4400,X"
+        "STA $LLHH,X"
       ]
     }
   },
@@ -1749,7 +1749,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "SHX $4400,Y"
+        "SHX $LLHH,Y"
       ]
     }
   },
@@ -1760,7 +1760,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "AHX $4400,Y"
+        "AHX $LLHH,Y"
       ]
     }
   },
@@ -1771,7 +1771,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "LDY #$44"
+        "LDY #$BB"
       ]
     }
   },
@@ -1782,7 +1782,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "LDA ($44,X)"
+        "LDA ($BB,X)"
       ]
     }
   },
@@ -1793,7 +1793,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "LDX #$44"
+        "LDX #$BB"
       ]
     }
   },
@@ -1804,7 +1804,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "LAX ($44,X)"
+        "LAX ($BB,X)"
       ]
     }
   },
@@ -1815,7 +1815,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "LDY $44"
+        "LDY $BB"
       ]
     }
   },
@@ -1826,7 +1826,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "LDA $44"
+        "LDA $BB"
       ]
     }
   },
@@ -1837,7 +1837,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "LDX $44"
+        "LDX $BB"
       ]
     }
   },
@@ -1848,7 +1848,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "LAX $44"
+        "LAX $BB"
       ]
     }
   },
@@ -1870,7 +1870,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "LDA #$44"
+        "LDA #$BB"
       ]
     }
   },
@@ -1892,7 +1892,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "LAX #$44"
+        "LAX #$BB"
       ]
     }
   },
@@ -1903,7 +1903,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "LDY $4400"
+        "LDY $LLHH"
       ]
     }
   },
@@ -1914,7 +1914,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "LDA $4400"
+        "LDA $LLHH"
       ]
     }
   },
@@ -1925,7 +1925,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "LDX $4400"
+        "LDX $LLHH"
       ]
     }
   },
@@ -1936,7 +1936,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "LAX $4400"
+        "LAX $LLHH"
       ]
     }
   },
@@ -1947,7 +1947,7 @@
       "notation": "*+d",
       "name": "REL",
       "examples": [
-        "BCS $10",
+        "BCS $BB",
         "BCS label"
       ]
     }
@@ -1959,7 +1959,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "LDA ($44),Y"
+        "LDA ($BB),Y"
       ]
     }
   },
@@ -1981,7 +1981,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "LAX ($44),Y"
+        "LAX ($BB),Y"
       ]
     }
   },
@@ -1992,7 +1992,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "LDY $44,X"
+        "LDY $BB,X"
       ]
     }
   },
@@ -2003,7 +2003,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "LDA $44,X"
+        "LDA $BB,X"
       ]
     }
   },
@@ -2014,7 +2014,7 @@
       "notation": "d,y",
       "name": "ZPY",
       "examples": [
-        "LDX $44,Y"
+        "LDX $BB,Y"
       ]
     }
   },
@@ -2025,7 +2025,7 @@
       "notation": "d,y",
       "name": "ZPY",
       "examples": [
-        "LAX $44,Y"
+        "LAX $BB,Y"
       ]
     }
   },
@@ -2047,7 +2047,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "LDA $4400,Y"
+        "LDA $LLHH,Y"
       ]
     }
   },
@@ -2069,7 +2069,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "LAS $4400,Y"
+        "LAS $LLHH,Y"
       ]
     }
   },
@@ -2080,7 +2080,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "LDY $4400,X"
+        "LDY $LLHH,X"
       ]
     }
   },
@@ -2091,7 +2091,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "LDA $4400,X"
+        "LDA $LLHH,X"
       ]
     }
   },
@@ -2102,7 +2102,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "LDX $4400,Y"
+        "LDX $LLHH,Y"
       ]
     }
   },
@@ -2113,7 +2113,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "LAX $4400,Y"
+        "LAX $LLHH,Y"
       ]
     }
   },
@@ -2124,7 +2124,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "CPY #$44"
+        "CPY #$BB"
       ]
     }
   },
@@ -2135,7 +2135,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "CMP ($44,X)"
+        "CMP ($BB,X)"
       ]
     }
   },
@@ -2146,7 +2146,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "NOP #$44"
+        "NOP #$BB"
       ]
     }
   },
@@ -2157,7 +2157,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "DCP ($44,X)"
+        "DCP ($BB,X)"
       ]
     }
   },
@@ -2168,7 +2168,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "CPY $44"
+        "CPY $BB"
       ]
     }
   },
@@ -2179,7 +2179,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "CMP $44"
+        "CMP $BB"
       ]
     }
   },
@@ -2190,7 +2190,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "DEC $44"
+        "DEC $BB"
       ]
     }
   },
@@ -2201,7 +2201,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "DCP $44"
+        "DCP $BB"
       ]
     }
   },
@@ -2223,7 +2223,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "CMP #$44"
+        "CMP #$BB"
       ]
     }
   },
@@ -2245,7 +2245,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "AXS #$44"
+        "AXS #$BB"
       ]
     }
   },
@@ -2256,7 +2256,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "CPY $4400"
+        "CPY $LLHH"
       ]
     }
   },
@@ -2267,7 +2267,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "CMP $4400"
+        "CMP $LLHH"
       ]
     }
   },
@@ -2278,7 +2278,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "DEC $4400"
+        "DEC $LLHH"
       ]
     }
   },
@@ -2289,7 +2289,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "DCP $4400"
+        "DCP $LLHH"
       ]
     }
   },
@@ -2300,7 +2300,7 @@
       "notation": "*+d",
       "name": "REL",
       "examples": [
-        "BNE $10",
+        "BNE $BB",
         "BNE label"
       ]
     }
@@ -2312,7 +2312,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "CMP ($44),Y"
+        "CMP ($BB),Y"
       ]
     }
   },
@@ -2334,7 +2334,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "DCP ($44),Y"
+        "DCP ($BB),Y"
       ]
     }
   },
@@ -2345,7 +2345,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "NOP $44,X"
+        "NOP $BB,X"
       ]
     }
   },
@@ -2356,7 +2356,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "CMP $44,X"
+        "CMP $BB,X"
       ]
     }
   },
@@ -2367,7 +2367,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "DEC $44,X"
+        "DEC $BB,X"
       ]
     }
   },
@@ -2378,7 +2378,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "DCP $44,X"
+        "DCP $BB,X"
       ]
     }
   },
@@ -2400,7 +2400,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "CMP $4400,Y"
+        "CMP $LLHH,Y"
       ]
     }
   },
@@ -2422,7 +2422,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "DCP $4400,Y"
+        "DCP $LLHH,Y"
       ]
     }
   },
@@ -2433,7 +2433,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "NOP $4400,X"
+        "NOP $LLHH,X"
       ]
     }
   },
@@ -2444,7 +2444,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "CMP $4400,X"
+        "CMP $LLHH,X"
       ]
     }
   },
@@ -2455,7 +2455,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "DEC $4400,X"
+        "DEC $LLHH,X"
       ]
     }
   },
@@ -2466,7 +2466,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "DCP $4400,X"
+        "DCP $LLHH,X"
       ]
     }
   },
@@ -2477,7 +2477,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "CPX #$44"
+        "CPX #$BB"
       ]
     }
   },
@@ -2488,7 +2488,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "SBC ($44,X)"
+        "SBC ($BB,X)"
       ]
     }
   },
@@ -2499,7 +2499,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "NOP #$44"
+        "NOP #$BB"
       ]
     }
   },
@@ -2510,7 +2510,7 @@
       "notation": "(d,x)",
       "name": "INDX",
       "examples": [
-        "ISC ($44,X)"
+        "ISC ($BB,X)"
       ]
     }
   },
@@ -2521,7 +2521,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "CPX $44"
+        "CPX $BB"
       ]
     }
   },
@@ -2532,7 +2532,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "SBC $44"
+        "SBC $BB"
       ]
     }
   },
@@ -2543,7 +2543,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "INC $44"
+        "INC $BB"
       ]
     }
   },
@@ -2554,7 +2554,7 @@
       "notation": "d",
       "name": "ZP",
       "examples": [
-        "ISC $44"
+        "ISC $BB"
       ]
     }
   },
@@ -2576,7 +2576,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "SBC #$44"
+        "SBC #$BB"
       ]
     }
   },
@@ -2598,7 +2598,7 @@
       "notation": "#i",
       "name": "IMM",
       "examples": [
-        "SBC #$44"
+        "SBC #$BB"
       ]
     }
   },
@@ -2609,7 +2609,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "CPX $4400"
+        "CPX $LLHH"
       ]
     }
   },
@@ -2620,7 +2620,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "SBC $4400"
+        "SBC $LLHH"
       ]
     }
   },
@@ -2631,7 +2631,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "INC $4400"
+        "INC $LLHH"
       ]
     }
   },
@@ -2642,7 +2642,7 @@
       "notation": "a",
       "name": "ABS",
       "examples": [
-        "ISC $4400"
+        "ISC $LLHH"
       ]
     }
   },
@@ -2653,7 +2653,7 @@
       "notation": "*+d",
       "name": "REL",
       "examples": [
-        "BEQ $10",
+        "BEQ $BB",
         "BEQ label"
       ]
     }
@@ -2665,7 +2665,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "SBC ($44),Y"
+        "SBC ($BB),Y"
       ]
     }
   },
@@ -2687,7 +2687,7 @@
       "notation": "(d),y",
       "name": "INDY",
       "examples": [
-        "ISC ($44),Y"
+        "ISC ($BB),Y"
       ]
     }
   },
@@ -2698,7 +2698,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "NOP $44,X"
+        "NOP $BB,X"
       ]
     }
   },
@@ -2709,7 +2709,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "SBC $44,X"
+        "SBC $BB,X"
       ]
     }
   },
@@ -2720,7 +2720,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "INC $44,X"
+        "INC $BB,X"
       ]
     }
   },
@@ -2731,7 +2731,7 @@
       "notation": "d,x",
       "name": "ZPX",
       "examples": [
-        "ISC $44,X"
+        "ISC $BB,X"
       ]
     }
   },
@@ -2753,7 +2753,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "SBC $4400,Y"
+        "SBC $LLHH,Y"
       ]
     }
   },
@@ -2775,7 +2775,7 @@
       "notation": "a,y",
       "name": "ABSY",
       "examples": [
-        "ISC $4400,Y"
+        "ISC $LLHH,Y"
       ]
     }
   },
@@ -2786,7 +2786,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "NOP $4400,X"
+        "NOP $LLHH,X"
       ]
     }
   },
@@ -2797,7 +2797,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "SBC $4400,X"
+        "SBC $LLHH,X"
       ]
     }
   },
@@ -2808,7 +2808,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "INC $4400,X"
+        "INC $LLHH,X"
       ]
     }
   },
@@ -2819,7 +2819,7 @@
       "notation": "a,x",
       "name": "ABSX",
       "examples": [
-        "ISC $4400,X"
+        "ISC $LLHH,X"
       ]
     }
   }
