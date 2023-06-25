@@ -1,225 +1,605 @@
 {
-  "ADC": {
+  "ADC+IMM": {
+    "mode": "IMM",
+    "opcode": "0x69"
+  },
+  "ADC+ZP": {
+    "mode": "ZP",
+    "opcode": "0x65"
+  },
+  "ADC+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x75"
+  },
+  "ADC+ABS": {
+    "mode": "ABS",
+    "opcode": "0x6D"
+  },
+  "ADC+ABSX": {
+    "mode": "ABSX",
+    "opcode": "0x7D"
+  },
+  "ADC+ABSY": {
+    "mode": "ABSY",
+    "opcode": "0x79"
+  },
+  "ADC+INDX": {
+    "mode": "INDX",
+    "opcode": "0x61"
+  },
+  "ADC+INDY": {
     "mode": "INDY",
     "opcode": "0x71"
   },
-  "AND": {
+  "AND+IMM": {
+    "mode": "IMM",
+    "opcode": "0x29"
+  },
+  "AND+ZP": {
+    "mode": "ZP",
+    "opcode": "0x25"
+  },
+  "AND+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x35"
+  },
+  "AND+ABS": {
+    "mode": "ABS",
+    "opcode": "0x2D"
+  },
+  "AND+ABSX": {
+    "mode": "ABSX",
+    "opcode": "0x3D"
+  },
+  "AND+ABSY": {
+    "mode": "ABSY",
+    "opcode": "0x39"
+  },
+  "AND+INDX": {
+    "mode": "INDX",
+    "opcode": "0x21"
+  },
+  "AND+INDY": {
     "mode": "INDY",
     "opcode": "0x31"
   },
-  "ASL": {
+  "ASL+IMPL": {
+    "mode": "IMPL",
+    "opcode": "0x0A"
+  },
+  "ASL+ZP": {
+    "mode": "ZP",
+    "opcode": "0x06"
+  },
+  "ASL+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x16"
+  },
+  "ASL+ABS": {
+    "mode": "ABS",
+    "opcode": "0x0E"
+  },
+  "ASL+ABSX": {
     "mode": "ABSX",
     "opcode": "0x1E"
   },
-  "BCC": {
+  "BCC+REL": {
     "mode": "REL",
     "opcode": "0x90"
   },
-  "BCS": {
+  "BCS+REL": {
     "mode": "REL",
     "opcode": "0xB0"
   },
-  "BEQ": {
+  "BEQ+REL": {
     "mode": "REL",
     "opcode": "0xF0"
   },
-  "BIT": {
+  "BIT+ZP": {
+    "mode": "ZP",
+    "opcode": "0x24"
+  },
+  "BIT+ABS": {
     "mode": "ABS",
     "opcode": "0x2C"
   },
-  "BMI": {
+  "BMI+REL": {
     "mode": "REL",
     "opcode": "0x30"
   },
-  "BNE": {
+  "BNE+REL": {
     "mode": "REL",
     "opcode": "0xD0"
   },
-  "BPL": {
+  "BPL+REL": {
     "mode": "REL",
     "opcode": "0x10"
   },
-  "BRK": {
+  "BRK+IMPL": {
     "mode": "IMPL",
     "opcode": "0x00"
   },
-  "BVC": {
+  "BVC+REL": {
     "mode": "REL",
     "opcode": "0x50"
   },
-  "BVS": {
+  "BVS+REL": {
     "mode": "REL",
     "opcode": "0x70"
   },
-  "CLC": {
+  "CLC+IMPL": {
     "mode": "IMPL",
     "opcode": "0x18"
   },
-  "CLD": {
+  "CLD+IMPL": {
     "mode": "IMPL",
     "opcode": "0xD8"
   },
-  "CLI": {
+  "CLI+IMPL": {
     "mode": "IMPL",
     "opcode": "0x58"
   },
-  "CLV": {
+  "CLV+IMPL": {
     "mode": "IMPL",
     "opcode": "0xB8"
   },
-  "CMP": {
+  "CMP+IMM": {
+    "mode": "IMM",
+    "opcode": "0xC9"
+  },
+  "CMP+ZP": {
+    "mode": "ZP",
+    "opcode": "0xC5"
+  },
+  "CMP+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0xD5"
+  },
+  "CMP+ABS": {
+    "mode": "ABS",
+    "opcode": "0xCD"
+  },
+  "CMP+ABSX": {
+    "mode": "ABSX",
+    "opcode": "0xDD"
+  },
+  "CMP+ABSY": {
+    "mode": "ABSY",
+    "opcode": "0xD9"
+  },
+  "CMP+INDX": {
+    "mode": "INDX",
+    "opcode": "0xC1"
+  },
+  "CMP+INDY": {
     "mode": "INDY",
     "opcode": "0xD1"
   },
-  "CPX": {
+  "CPX+IMM": {
+    "mode": "IMM",
+    "opcode": "0xE0"
+  },
+  "CPX+ZP": {
+    "mode": "ZP",
+    "opcode": "0xE4"
+  },
+  "CPX+ABS": {
     "mode": "ABS",
     "opcode": "0xEC"
   },
-  "CPY": {
+  "CPY+IMM": {
+    "mode": "IMM",
+    "opcode": "0xC0"
+  },
+  "CPY+ZP": {
+    "mode": "ZP",
+    "opcode": "0xC4"
+  },
+  "CPY+ABS": {
     "mode": "ABS",
     "opcode": "0xCC"
   },
-  "DEC": {
+  "DEC+ZP": {
+    "mode": "ZP",
+    "opcode": "0xC6"
+  },
+  "DEC+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0xD6"
+  },
+  "DEC+ABS": {
+    "mode": "ABS",
+    "opcode": "0xCE"
+  },
+  "DEC+ABSX": {
     "mode": "ABSX",
     "opcode": "0xDE"
   },
-  "DEX": {
+  "DEX+IMPL": {
     "mode": "IMPL",
     "opcode": "0xCA"
   },
-  "DEY": {
+  "DEY+IMPL": {
     "mode": "IMPL",
     "opcode": "0x88"
   },
-  "EOR": {
+  "EOR+IMM": {
+    "mode": "IMM",
+    "opcode": "0x49"
+  },
+  "EOR+ZP": {
+    "mode": "ZP",
+    "opcode": "0x45"
+  },
+  "EOR+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x55"
+  },
+  "EOR+ABS": {
+    "mode": "ABS",
+    "opcode": "0x4D"
+  },
+  "EOR+ABSX": {
+    "mode": "ABSX",
+    "opcode": "0x5D"
+  },
+  "EOR+ABSY": {
+    "mode": "ABSY",
+    "opcode": "0x59"
+  },
+  "EOR+INDX": {
+    "mode": "INDX",
+    "opcode": "0x41"
+  },
+  "EOR+INDY": {
     "mode": "INDY",
     "opcode": "0x51"
   },
-  "INC": {
+  "INC+ZP": {
+    "mode": "ZP",
+    "opcode": "0xE6"
+  },
+  "INC+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0xF6"
+  },
+  "INC+ABS": {
+    "mode": "ABS",
+    "opcode": "0xEE"
+  },
+  "INC+ABSX": {
     "mode": "ABSX",
     "opcode": "0xFE"
   },
-  "INX": {
+  "INX+IMPL": {
     "mode": "IMPL",
     "opcode": "0xE8"
   },
-  "INY": {
+  "INY+IMPL": {
     "mode": "IMPL",
     "opcode": "0xC8"
   },
-  "JMP": {
+  "JMP+ABS": {
+    "mode": "ABS",
+    "opcode": "0x4C"
+  },
+  "JMP+IND": {
     "mode": "IND",
     "opcode": "0x6C"
   },
-  "JSR": {
+  "JSR+ABS": {
     "mode": "ABS",
     "opcode": "0x20"
   },
-  "LDA": {
+  "LDA+IMM": {
+    "mode": "IMM",
+    "opcode": "0xA9"
+  },
+  "LDA+ZP": {
+    "mode": "ZP",
+    "opcode": "0xA5"
+  },
+  "LDA+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0xB5"
+  },
+  "LDA+ABS": {
+    "mode": "ABS",
+    "opcode": "0xAD"
+  },
+  "LDA+ABSX": {
+    "mode": "ABSX",
+    "opcode": "0xBD"
+  },
+  "LDA+ABSY": {
+    "mode": "ABSY",
+    "opcode": "0xB9"
+  },
+  "LDA+INDX": {
+    "mode": "INDX",
+    "opcode": "0xA1"
+  },
+  "LDA+INDY": {
     "mode": "INDY",
     "opcode": "0xB1"
   },
-  "LDX": {
+  "LDX+IMM": {
+    "mode": "IMM",
+    "opcode": "0xA2"
+  },
+  "LDX+ZP": {
+    "mode": "ZP",
+    "opcode": "0xA6"
+  },
+  "LDX+ZPY": {
+    "mode": "ZPY",
+    "opcode": "0xB6"
+  },
+  "LDX+ABS": {
+    "mode": "ABS",
+    "opcode": "0xAE"
+  },
+  "LDX+ABSY": {
     "mode": "ABSY",
     "opcode": "0xBE"
   },
-  "LDY": {
+  "LDY+IMM": {
+    "mode": "IMM",
+    "opcode": "0xA0"
+  },
+  "LDY+ZP": {
+    "mode": "ZP",
+    "opcode": "0xA4"
+  },
+  "LDY+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0xB4"
+  },
+  "LDY+ABS": {
+    "mode": "ABS",
+    "opcode": "0xAC"
+  },
+  "LDY+ABSX": {
     "mode": "ABSX",
     "opcode": "0xBC"
   },
-  "LSR": {
+  "LSR+IMPL": {
+    "mode": "IMPL",
+    "opcode": "0x4A"
+  },
+  "LSR+ZP": {
+    "mode": "ZP",
+    "opcode": "0x46"
+  },
+  "LSR+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x56"
+  },
+  "LSR+ABS": {
+    "mode": "ABS",
+    "opcode": "0x4E"
+  },
+  "LSR+ABSX": {
     "mode": "ABSX",
     "opcode": "0x5E"
   },
-  "NOP": {
+  "NOP+IMPL": {
     "mode": "IMPL",
     "opcode": "0xEA"
   },
-  "ORA": {
+  "ORA+IMM": {
+    "mode": "IMM",
+    "opcode": "0x09"
+  },
+  "ORA+ZP": {
+    "mode": "ZP",
+    "opcode": "0x05"
+  },
+  "ORA+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x15"
+  },
+  "ORA+ABS": {
+    "mode": "ABS",
+    "opcode": "0x0D"
+  },
+  "ORA+ABSX": {
+    "mode": "ABSX",
+    "opcode": "0x1D"
+  },
+  "ORA+ABSY": {
+    "mode": "ABSY",
+    "opcode": "0x19"
+  },
+  "ORA+INDX": {
+    "mode": "INDX",
+    "opcode": "0x01"
+  },
+  "ORA+INDY": {
     "mode": "INDY",
     "opcode": "0x11"
   },
-  "PHA": {
+  "PHA+IMPL": {
     "mode": "IMPL",
     "opcode": "0x48"
   },
-  "PHP": {
+  "PHP+IMPL": {
     "mode": "IMPL",
     "opcode": "0x08"
   },
-  "PLA": {
+  "PLA+IMPL": {
     "mode": "IMPL",
     "opcode": "0x68"
   },
-  "PLP": {
+  "PLP+IMPL": {
     "mode": "IMPL",
     "opcode": "0x28"
   },
-  "ROL": {
+  "ROL+IMPL": {
+    "mode": "IMPL",
+    "opcode": "0x2A"
+  },
+  "ROL+ZP": {
+    "mode": "ZP",
+    "opcode": "0x26"
+  },
+  "ROL+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x36"
+  },
+  "ROL+ABS": {
+    "mode": "ABS",
+    "opcode": "0x2E"
+  },
+  "ROL+ABSX": {
     "mode": "ABSX",
     "opcode": "0x3E"
   },
-  "ROR": {
+  "ROR+IMPL": {
+    "mode": "IMPL",
+    "opcode": "0x6A"
+  },
+  "ROR+ZP": {
+    "mode": "ZP",
+    "opcode": "0x66"
+  },
+  "ROR+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x76"
+  },
+  "ROR+ABS": {
+    "mode": "ABS",
+    "opcode": "0x6E"
+  },
+  "ROR+ABSX": {
     "mode": "ABSX",
     "opcode": "0x7E"
   },
-  "RTI": {
+  "RTI+IMPL": {
     "mode": "IMPL",
     "opcode": "0x40"
   },
-  "RTS": {
+  "RTS+IMPL": {
     "mode": "IMPL",
     "opcode": "0x60"
   },
-  "SBC": {
+  "SBC+IMM": {
+    "mode": "IMM",
+    "opcode": "0xE9"
+  },
+  "SBC+ZP": {
+    "mode": "ZP",
+    "opcode": "0xE5"
+  },
+  "SBC+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0xF5"
+  },
+  "SBC+ABS": {
+    "mode": "ABS",
+    "opcode": "0xED"
+  },
+  "SBC+ABSX": {
+    "mode": "ABSX",
+    "opcode": "0xFD"
+  },
+  "SBC+ABSY": {
+    "mode": "ABSY",
+    "opcode": "0xF9"
+  },
+  "SBC+INDX": {
+    "mode": "INDX",
+    "opcode": "0xE1"
+  },
+  "SBC+INDY": {
     "mode": "INDY",
     "opcode": "0xF1"
   },
-  "SEC": {
+  "SEC+IMPL": {
     "mode": "IMPL",
     "opcode": "0x38"
   },
-  "SED": {
+  "SED+IMPL": {
     "mode": "IMPL",
     "opcode": "0xF8"
   },
-  "SEI": {
+  "SEI+IMPL": {
     "mode": "IMPL",
     "opcode": "0x78"
   },
-  "STA": {
+  "STA+ZP": {
+    "mode": "ZP",
+    "opcode": "0x85"
+  },
+  "STA+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x95"
+  },
+  "STA+ABS": {
+    "mode": "ABS",
+    "opcode": "0x8D"
+  },
+  "STA+ABSX": {
+    "mode": "ABSX",
+    "opcode": "0x9D"
+  },
+  "STA+ABSY": {
+    "mode": "ABSY",
+    "opcode": "0x99"
+  },
+  "STA+INDX": {
+    "mode": "INDX",
+    "opcode": "0x81"
+  },
+  "STA+INDY": {
     "mode": "INDY",
     "opcode": "0x91"
   },
-  "STX": {
+  "STX+ZP": {
+    "mode": "ZP",
+    "opcode": "0x86"
+  },
+  "STX+ZPY": {
+    "mode": "ZPY",
+    "opcode": "0x96"
+  },
+  "STX+ABS": {
     "mode": "ABS",
     "opcode": "0x8E"
   },
-  "STY": {
+  "STY+ZP": {
+    "mode": "ZP",
+    "opcode": "0x84"
+  },
+  "STY+ZPX": {
+    "mode": "ZPX",
+    "opcode": "0x94"
+  },
+  "STY+ABS": {
     "mode": "ABS",
     "opcode": "0x8C"
   },
-  "TAX": {
+  "TAX+IMPL": {
     "mode": "IMPL",
     "opcode": "0xAA"
   },
-  "TAY": {
+  "TAY+IMPL": {
     "mode": "IMPL",
     "opcode": "0xA8"
   },
-  "TSX": {
+  "TSX+IMPL": {
     "mode": "IMPL",
     "opcode": "0xBA"
   },
-  "TXA": {
+  "TXA+IMPL": {
     "mode": "IMPL",
     "opcode": "0x8A"
   },
-  "TXS": {
+  "TXS+IMPL": {
     "mode": "IMPL",
     "opcode": "0x9A"
   },
-  "TYA": {
+  "TYA+IMPL": {
     "mode": "IMPL",
     "opcode": "0x98"
   }

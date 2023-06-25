@@ -123,10 +123,7 @@ function instrToRustMap() {
             const {opcode, mode} = o;
             const examples =  mode.examples.map((e) => `"${e}".to_string()`).join(', ');
             const fmt = 'Opcode::new({OPCODE}, {OFFICIAL}, vec![{EXAMPLES}])';
-            let off_value = official[instr];
-            if (off_value && off_value.opcode == opcode) {
-                assert(off_value.mode == mode.name);
-            }
+            let off_value = official[instr + '+' + mode.name];
             return inject(fmt, {
                 'OPCODE': opcode,
                 'OFFICIAL' : off_value ? (off_value.opcode == opcode) : false,
