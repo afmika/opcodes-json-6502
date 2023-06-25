@@ -1,0 +1,226 @@
+{
+  "ADC": {
+    "mode": "INDY",
+    "opcode": "0x71"
+  },
+  "AND": {
+    "mode": "INDY",
+    "opcode": "0x31"
+  },
+  "ASL": {
+    "mode": "ABSX",
+    "opcode": "0x1E"
+  },
+  "BCC": {
+    "mode": "REL",
+    "opcode": "0x90"
+  },
+  "BCS": {
+    "mode": "REL",
+    "opcode": "0xB0"
+  },
+  "BEQ": {
+    "mode": "REL",
+    "opcode": "0xF0"
+  },
+  "BIT": {
+    "mode": "ABS",
+    "opcode": "0x2C"
+  },
+  "BMI": {
+    "mode": "REL",
+    "opcode": "0x30"
+  },
+  "BNE": {
+    "mode": "REL",
+    "opcode": "0xD0"
+  },
+  "BPL": {
+    "mode": "REL",
+    "opcode": "0x10"
+  },
+  "BRK": {
+    "mode": "IMPL",
+    "opcode": "0x00"
+  },
+  "BVC": {
+    "mode": "REL",
+    "opcode": "0x50"
+  },
+  "BVS": {
+    "mode": "REL",
+    "opcode": "0x70"
+  },
+  "CLC": {
+    "mode": "IMPL",
+    "opcode": "0x18"
+  },
+  "CLD": {
+    "mode": "IMPL",
+    "opcode": "0xD8"
+  },
+  "CLI": {
+    "mode": "IMPL",
+    "opcode": "0x58"
+  },
+  "CLV": {
+    "mode": "IMPL",
+    "opcode": "0xB8"
+  },
+  "CMP": {
+    "mode": "INDY",
+    "opcode": "0xD1"
+  },
+  "CPX": {
+    "mode": "ABS",
+    "opcode": "0xEC"
+  },
+  "CPY": {
+    "mode": "ABS",
+    "opcode": "0xCC"
+  },
+  "DEC": {
+    "mode": "ABSX",
+    "opcode": "0xDE"
+  },
+  "DEX": {
+    "mode": "IMPL",
+    "opcode": "0xCA"
+  },
+  "DEY": {
+    "mode": "IMPL",
+    "opcode": "0x88"
+  },
+  "EOR": {
+    "mode": "INDY",
+    "opcode": "0x51"
+  },
+  "INC": {
+    "mode": "ABSX",
+    "opcode": "0xFE"
+  },
+  "INX": {
+    "mode": "IMPL",
+    "opcode": "0xE8"
+  },
+  "INY": {
+    "mode": "IMPL",
+    "opcode": "0xC8"
+  },
+  "JMP": {
+    "mode": "IND",
+    "opcode": "0x6C"
+  },
+  "JSR": {
+    "mode": "ABS",
+    "opcode": "0x20"
+  },
+  "LDA": {
+    "mode": "INDY",
+    "opcode": "0xB1"
+  },
+  "LDX": {
+    "mode": "ABSY",
+    "opcode": "0xBE"
+  },
+  "LDY": {
+    "mode": "ABSX",
+    "opcode": "0xBC"
+  },
+  "LSR": {
+    "mode": "ABSX",
+    "opcode": "0x5E"
+  },
+  "NOP": {
+    "mode": "IMPL",
+    "opcode": "0xEA"
+  },
+  "ORA": {
+    "mode": "INDY",
+    "opcode": "0x11"
+  },
+  "PHA": {
+    "mode": "IMPL",
+    "opcode": "0x48"
+  },
+  "PHP": {
+    "mode": "IMPL",
+    "opcode": "0x08"
+  },
+  "PLA": {
+    "mode": "IMPL",
+    "opcode": "0x68"
+  },
+  "PLP": {
+    "mode": "IMPL",
+    "opcode": "0x28"
+  },
+  "ROL": {
+    "mode": "ABSX",
+    "opcode": "0x3E"
+  },
+  "ROR": {
+    "mode": "ABSX",
+    "opcode": "0x7E"
+  },
+  "RTI": {
+    "mode": "IMPL",
+    "opcode": "0x40"
+  },
+  "RTS": {
+    "mode": "IMPL",
+    "opcode": "0x60"
+  },
+  "SBC": {
+    "mode": "INDY",
+    "opcode": "0xF1"
+  },
+  "SEC": {
+    "mode": "IMPL",
+    "opcode": "0x38"
+  },
+  "SED": {
+    "mode": "IMPL",
+    "opcode": "0xF8"
+  },
+  "SEI": {
+    "mode": "IMPL",
+    "opcode": "0x78"
+  },
+  "STA": {
+    "mode": "INDY",
+    "opcode": "0x91"
+  },
+  "STX": {
+    "mode": "ABS",
+    "opcode": "0x8E"
+  },
+  "STY": {
+    "mode": "ABS",
+    "opcode": "0x8C"
+  },
+  "TAX": {
+    "mode": "IMPL",
+    "opcode": "0xAA"
+  },
+  "TAY": {
+    "mode": "IMPL",
+    "opcode": "0xA8"
+  },
+  "TSX": {
+    "mode": "IMPL",
+    "opcode": "0xBA"
+  },
+  "TXA": {
+    "mode": "IMPL",
+    "opcode": "0x8A"
+  },
+  "TXS": {
+    "mode": "IMPL",
+    "opcode": "0x9A"
+  },
+  "TYA": {
+    "mode": "IMPL",
+    "opcode": "0x98"
+  }
+}

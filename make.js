@@ -4,6 +4,7 @@ const fs = require("fs");
 
 // !! includes unofficial opcodes !!
 const json = require("./files/original.json");
+const official = require("./files/official.json");
 const assert = require("assert");
 
 // http://www.6502.org/tutorials/6502opcodes.html
@@ -121,9 +122,15 @@ function instrToRustMap() {
         const opcodes = op_mode.map((o) => {
             const {opcode, mode} = o;
             const examples =  mode.examples.map((e) => `"${e}".to_string()`).join(', ');
-            const fmt = 'Opcode::new({OPCODE}, vec![{EXAMPLES}])';
+            const fmt = 'Opcode::new({OPCODE}, {OFFICIAL}, vec![{EXAMPLES}])';
+            let off_value = official[instr];
             return inject(fmt, {
                 'OPCODE': opcode,
+                'OFFICIAL' : off_value ? (
+                        off_value.opcode == opcode 
+                        && off_value.mode == off_value.mode
+                    ) 
+                    : false,
                 'EXAMPLES': examples
             });
         });
@@ -140,7 +147,7 @@ function instrToRustMap() {
     return rows.join('\n');
 }
 
-fs.writeFileSync("./files/opcode_to_instr.json", JSON.stringify(opcodeToInstruction(), null, 2));
-fs.writeFileSync("./files/instr_to_opcodes.json", JSON.stringify(instrToOpcodes(), null, 2));
+fs.writeFileSync("./files/unofficial_opcode_to_instr.json", JSON.stringify(opcodeToInstruction(), null, 2));
+fs.writeFileSync("./files/unofficial_instr_to_opcodes.json", JSON.stringify(instrToOpcodes(), null, 2));
 
 fs.writeFileSync("./files/opcodes.rs", instrToRustMap());
