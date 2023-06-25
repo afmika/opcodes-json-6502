@@ -124,13 +124,12 @@ function instrToRustMap() {
             const examples =  mode.examples.map((e) => `"${e}".to_string()`).join(', ');
             const fmt = 'Opcode::new({OPCODE}, {OFFICIAL}, vec![{EXAMPLES}])';
             let off_value = official[instr];
+            if (off_value && off_value.opcode == opcode) {
+                assert(off_value.mode == mode.name);
+            }
             return inject(fmt, {
                 'OPCODE': opcode,
-                'OFFICIAL' : off_value ? (
-                        off_value.opcode == opcode 
-                        && off_value.mode == off_value.mode
-                    ) 
-                    : false,
+                'OFFICIAL' : off_value ? (off_value.opcode == opcode) : false,
                 'EXAMPLES': examples
             });
         });
