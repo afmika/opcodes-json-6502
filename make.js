@@ -84,18 +84,6 @@ function instrToOpcodes() {
     return ans;
 }
 
-function instrToOpcodes() {
-    const json = opcodeToInstruction();
-    const ans = {};
-    for (const v of Object.values(json)) {
-        if (!ans[v.instr]) {
-            ans[v.instr] = {};
-        }
-        ans[v.instr][v.hex] = {...v.mode};
-    }
-    return ans;
-}
-
 // example rust code generation
 function instrToRustMap() {
     // (instr, mode) => [(opcode, examples)*]
@@ -143,7 +131,7 @@ function instrToRustMap() {
     return rows.join('\n');
 }
 
-fs.writeFileSync("./files/unofficial_opcode_to_instr.json", JSON.stringify(opcodeToInstruction(), null, 2));
-fs.writeFileSync("./files/unofficial_instr_to_opcodes.json", JSON.stringify(instrToOpcodes(), null, 2));
+fs.writeFileSync("./files/gen/unofficial_opcode_to_instr.json", JSON.stringify(opcodeToInstruction(), null, 2));
+fs.writeFileSync("./files/gen/unofficial_instr_to_opcodes.json", JSON.stringify(instrToOpcodes(), null, 2));
 
-fs.writeFileSync("./files/opcodes.rs", instrToRustMap());
+fs.writeFileSync("./files/gen/opcodes.rs", instrToRustMap());
